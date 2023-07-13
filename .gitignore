@@ -1,0 +1,12 @@
+# Project place files
+*.rbxlx
+*.rbxl
+
+# Lock files
+*.lock
+
+# Wally packages
+Packages/
+
+# LSP sourcemaps
+sourcemap.json
