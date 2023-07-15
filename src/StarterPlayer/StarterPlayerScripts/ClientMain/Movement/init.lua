@@ -70,18 +70,20 @@ function Movement:Sprint(Enabled: boolean)
 	end
 end
 
-while task.wait() do
-	if Humanoid then
-		if Humanoid.MoveDirection.Magnitude == 0 then
-			LoadedAnimation:AdjustSpeed(0)
-		else
-			if Sprinting then
-				LoadedAnimation:AdjustSpeed(1.25)
+task.spawn(function()
+	while task.wait() do
+		if Humanoid then
+			if Humanoid.MoveDirection.Magnitude == 0 then
+				LoadedAnimation:AdjustSpeed(0)
 			else
-				LoadedAnimation:AdjustSpeed(1)
+				if Sprinting then
+					LoadedAnimation:AdjustSpeed(1.25)
+				else
+					LoadedAnimation:AdjustSpeed(1)
+				end
 			end
 		end
 	end
-end
+end)
 
 return Movement
