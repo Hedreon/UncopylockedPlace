@@ -3,31 +3,18 @@
   "tree": {
     "$className": "DataModel",
 
-    "ReplicatedStorage": {
-      "Packages": {
-        "$className": "Folder",
-        "$path": "Packages"
-      }
-    },
-
-    "ServerScriptService": {
-      "Server": {
-        "$path": "src/server"
-      }
-    },
-
-    "StarterPlayer": {
-      "StarterPlayerScripts": {
-        "$path": "src/client"
-      }
-    },
-
     "Workspace": {
       "$properties": {
-        "FilteringEnabled": true
+        "FilteringEnabled": true,
+        "StreamingEnabled": true,
+        "StreamingIntegrityMode": "PauseOutsideLoadedArea",
+        "StreamingTargetRadius": 64,
+        "StreamOutBehavior": "Opportunistic"
       },
+
       "SpawnLocation": {
         "$className": "SpawnLocation",
+
         "$properties": {
           "Anchored": true,
           "Size": [
@@ -36,25 +23,37 @@
             12
           ],
           "CFrame": [
-            0, 0.5, 0,
-            1, 0, 0,
-            0, 1, 0,
-            0, 0, 1
+            0,
+            0.5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
           ],
           "Duration": 0,
           "BottomSurface": "Smooth",
           "TopSurface": "Smooth"
         },
+
         "Decal": {
           "$className": "Decal",
+
           "$properties": {
             "Texture": "rbxasset://textures/SpawnLocation.png",
             "Face": "Top"
           }
         }
       },
+
       "Baseplate": {
         "$className": "Part",
+        
         "$properties": {
           "Anchored": true,
           "Color": [
@@ -69,16 +68,26 @@
             2048
           ],
           "CFrame": [
-            0, -8, 0,
-            1, 0, 0,
-            0, 1, 0,
-            0, 0, 1
+            0,
+            -8,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
           ],
           "BottomSurface": "Smooth",
           "TopSurface": "Smooth"
         },
+
         "Texture": {
           "$className": "Texture",
+
           "$properties": {
             "Color3": [
               0,
@@ -94,6 +103,7 @@
         }
       }
     },
+
     "Lighting": {
       "$properties": {
         "Ambient": [
@@ -120,8 +130,10 @@
           }
         }
       },
+
       "Atmosphere": {
         "$className": "Atmosphere",
+
         "$properties": {
           "Density": 0.3,
           "Offset": 0.25,
@@ -137,8 +149,10 @@
           ]
         }
       },
+
       "Sky": {
         "$className": "Sky",
+
         "$properties": {
           "MoonTextureId": "rbxassetid://6444320592",
           "SkyboxBk": "rbxassetid://6444884337",
@@ -151,25 +165,68 @@
           "SunTextureId": "rbxassetid://6196665106"
         }
       },
+
       "Bloom": {
         "$className": "BloomEffect",
+
         "$properties": {
           "Intensity": 1,
           "Size": 24,
           "Threshold": 2
         }
       },
+
       "SunRays": {
         "$className": "SunRaysEffect",
+
         "$properties": {
           "Intensity": 0.01,
           "Spread": 0.1
         }
       }
     },
+
+    "ReplicatedStorage": {
+      "Packages": {
+        "$className": "Folder",
+        "$path": "Packages"
+      }
+    },
+
+    "StarterPack": {
+      "$path": "src/StarterPack"
+    },
+
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+
+      "$properties": {
+        "CameraMaxZoomDistance": 128,
+        "EnableMouseLockOption": false
+      },
+
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$ignoreUnknownInstances": true,
+        "$path": "src/StarterPlayer/StarterPlayerScripts"
+      },
+
+      "StarterCharacterScripts": {
+        "$path": "src/StarterPlayer/StarterCharacterScripts"
+      },
+      
+      "$ignoreUnknownInstances": true
+    },
+
     "SoundService": {
       "$properties": {
         "RespectFilteringEnabled": true
+      }
+    },
+
+    "TextChatService": {
+      "$properties": {
+        "ChatVersion": "TextChatService"
       }
     }
   }

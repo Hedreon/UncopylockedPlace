@@ -1,0 +1,19 @@
+{
+	"ClassName": "Part",
+	"Properties": {
+		"Color": [
+			0.0352941,
+			0.537255,
+			0.811765
+		],
+		"Material": "ForceField",
+		"Size": [
+			2,
+			2,
+			2
+		],
+		"Shape": "Ball",
+		"BottomSurface": "Smooth",
+		"TopSurface": "Smooth"
+	}
+}
