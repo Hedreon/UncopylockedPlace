@@ -4,6 +4,7 @@ local ReplicatedStorage: any = game:GetService("ReplicatedStorage")
 local Players: Players = game:GetService("Players")
 
 local LocalPlayer: any = Players.LocalPlayer
+local Character: Model = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 local PlayerGui: PlayerGui = if LocalPlayer then LocalPlayer.PlayerGui else nil
 local PlayerScripts: PlayerScripts = if LocalPlayer then LocalPlayer.PlayerScripts else nil
 
@@ -18,6 +19,9 @@ local LayoutToDetect: any = {
 local InvokeLayout: any = LayoutHandler.GetLayout:Invoke()
 local DetectFromLayout: any = LayoutToDetect[InvokeLayout]
 
+local Movement = require(Character:WaitForChild("Movement"))
+local Flashlight = require(PlayerScripts:WaitForChild("Flashlight"))
+
 local Fusion: any = require(ReplicatedStorage.Packages.fusion)
 local Children: any = Fusion.Children
 
@@ -26,6 +30,10 @@ local Button: any = require(script.Addons.Button)
 local Label: any = require(script.Addons.Label)
 
 local ClickDebounce: boolean = false
+
+local FlashlightEnabled: boolean = false
+local SprintEnabled: boolean = false
+
 local Opened: boolean = false
 
 function Creator:Initialize()
@@ -84,12 +92,12 @@ function Creator:Initialize()
 				AnchorPoint = Vector2.new(1, 0.2),
 
 				OnClick = function()
-					if not ClickDebounce then
-						ClickDebounce = true
-						warn("Not developed yet!")
-						-- Movement:Sprint()
-						task.wait(1)
-						ClickDebounce = false
+					if not SprintEnabled then
+						Movement:Sprint(true)
+						SprintEnabled = true
+					else
+						Movement:Sprint(false)
+						SprintEnabled = false
 					end
 				end
 			},
@@ -104,8 +112,7 @@ function Creator:Initialize()
 				OnClick = function()
 					if not ClickDebounce then
 						ClickDebounce = true
-						warn("Not developed yet!")
-						-- Movement:Crawl()
+						Movement:Crawl()
 						task.wait(1)
 						ClickDebounce = false
 					end
@@ -120,12 +127,12 @@ function Creator:Initialize()
 				AnchorPoint = Vector2.new(1, 0.8),
 
 				OnClick = function()
-					if not ClickDebounce then
-						ClickDebounce = true
-						warn("Not developed yet!")
-						-- Flashlight:Flash()
-						task.wait(1)
-						ClickDebounce = false
+					if not FlashlightEnabled then
+						Flashlight:Flash(true)
+						FlashlightEnabled = true
+					else
+						Flashlight:Flash(false)
+						FlashlightEnabled = false
 					end
 				end
 			},
@@ -146,89 +153,5 @@ function Creator:Initialize()
 		}
 	}
 end
-
--- function Creator:ControlBar()
--- 	return TransparentFrame:Create {
--- 		Name = "ControlBar",
--- 		Size = UDim2.new(1, 0, 0.04, 0),
-
--- 		[Children] = {
--- 			Button:Create {
--- 				Name = "HelpButton",
--- 				Text = "Help...",
--- 				Size = UDim2.new(0.125, 0, 1, 0),
-
--- 				OnClick = function()
--- 					if not ClickDebounce then
--- 						ClickDebounce = true
--- 						Message:Create("Aesthetic purposes only.", 3)
--- 						task.wait(0.2)
--- 						ClickDebounce = false
--- 					end
--- 				end
--- 			},
-
--- 			Button:Create {
--- 				Name = "FullscreenButton",
--- 				Text = "Fullscreen",
--- 				Size = UDim2.new(0.125, 0, 1, 0),
--- 				Position = UDim2.new(0.125, 0, 0, 0),
-
--- 				OnClick = function()
--- 					if not ClickDebounce then
--- 						ClickDebounce = true
--- 						Message:Create("Aesthetic purposes only.", 3)
--- 						task.wait(0.2)
--- 						ClickDebounce = false
--- 					end
--- 				end
--- 			},
-
--- 			Button:Create {
--- 				Name = "ExitButton",
--- 				Text = "Exit",
--- 				Size = UDim2.new(0.125, 0, 1, 0),
--- 				Position = UDim2.new(0.25, 0, 0, 0),
-
--- 				OnClick = function()
--- 					LocalPlayer:Kick('You "exited" the game.')
--- 				end
--- 			}
--- 		}
--- 	}
--- end
-
--- function Creator:PlayerList()
--- 	return TransparentFrame:Create {
--- 		Name = "PlayerList",
--- 		Size = UDim2.new(0.1, 0, 0.96, 0),
--- 		AnchorPoint = Vector2.new(0.96, 0),
--- 		Position = UDim2.new(0.98, 0, 0.04, 0),
-
--- 		[Children] = {
--- 			Label:Create {
--- 				Name = "TitleLabel",
--- 				Text = "Player List",
--- 				Size = UDim2.new(1, 0, 0.04, 0),
--- 			},
-
--- 			Label:Create {
--- 				Name = "SeparatorLabel",
--- 				Text = "",
--- 				Size = UDim2.new(1, 0, 0.04, 0),
--- 				Position = UDim2.new(0, 0, 0.04, 0),
--- 			},
-
--- 			Label:Create {
--- 				Name = "Template",
--- 				Text = "Player",
--- 				Size = UDim2.new(1, 0, 0.04, 0),
--- 				Visible = false
--- 			},
-
--- 			ListLayout:Create()
--- 		}
--- 	}
--- end
 
 return Creator

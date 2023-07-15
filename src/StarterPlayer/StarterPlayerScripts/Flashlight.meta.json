@@ -1,0 +1,10 @@
+{
+	"properties": {
+		"Attributes": {
+			"LightRange": {
+				"Float64": 20
+			}
+		}
+	},
+	"ignoreUnknownInstances": true
+}
