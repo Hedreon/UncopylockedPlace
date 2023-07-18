@@ -38,7 +38,7 @@ end
 
 function GUI:Initialize()
 	if PlayerGui then
-		local _UI = New "ScreenGui" {
+		local _UI: any = New "ScreenGui" {
 			Name = "MainGui",
 			Parent = PlayerGui,
 

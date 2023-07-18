@@ -1,6 +1,5 @@
 local Flashlight: any = {}
 
-local UserInputService: UserInputService = game:GetService("UserInputService")
 local TweenService: TweenService = game:GetService("TweenService")
 local Players: Players = game:GetService("Players")
 
@@ -11,8 +10,6 @@ local HumanoidRootPart: Instance? = if Character then Character:WaitForChild("Hu
 local TweenData: TweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0)
 
 local LightRange: number = script:GetAttribute("LightRange")
-
-local FlashlightEnabled: boolean = false
 
 function Flashlight:Flash(Enabled: boolean)
 	if HumanoidRootPart then
@@ -34,17 +31,5 @@ function Flashlight:Flash(Enabled: boolean)
 		end
 	end
 end
-
-UserInputService.InputBegan:Connect(function(Input: InputObject)
-	if Input.KeyCode == Enum.KeyCode.L then
-		if not FlashlightEnabled then
-			Flashlight:Flash(true)
-			FlashlightEnabled = true
-		else
-			Flashlight:Flash(false)
-			FlashlightEnabled = false
-		end
-	end
-end)
 
 return Flashlight

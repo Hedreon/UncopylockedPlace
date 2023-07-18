@@ -1,0 +1,56 @@
+{
+    "ClassName": "SurfaceGui",
+    "Properties": {
+        "Face": "Front",
+        "LightInfluence": 1,
+        "ZIndexBehavior": "Sibling",
+        "ClipsDescendants": true,
+        "SizingMode": "PixelsPerStud"
+    },
+    "Children": [
+        {
+            "ClassName": "Frame",
+            "Name": "DamageFrame",
+            "Properties": {
+                "BackgroundTransparency": 1,
+                "BorderSizePixel": 0,
+                "Size": {
+                    "UDim2": [
+                        [
+                            1,
+                            0
+                        ],
+                        [
+                            1,
+                            0
+                        ]
+                    ]
+                }
+            },
+            "Children": [
+                {
+                    "ClassName": "TextLabel",
+                    "Name": "DamageLabel",
+                    "Properties": {
+                        "BackgroundTransparency": 1,
+                        "BorderSizePixel": 0,
+                        "Size": {
+                            "UDim2": [
+                                [
+                                    1,
+                                    0
+                                ],
+                                [
+                                    1,
+                                    0
+                                ]
+                            ]
+                        },
+                        "Text": "🤕",
+                        "TextSize": 100
+                    }
+                }
+            ]
+        }
+    ]
+}

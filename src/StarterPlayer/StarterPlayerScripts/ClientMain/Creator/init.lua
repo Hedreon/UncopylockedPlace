@@ -19,8 +19,8 @@ local LayoutToDetect: any = {
 local InvokeLayout: any = LayoutHandler.GetLayout:Invoke()
 local DetectFromLayout: any = LayoutToDetect[InvokeLayout]
 
-local Movement = require(Character:WaitForChild("Movement"))
-local Flashlight = require(PlayerScripts:WaitForChild("Flashlight"))
+local Movement: any = require(Character:WaitForChild("Movement"))
+local Flashlight: any = require(PlayerScripts:WaitForChild("Flashlight"))
 
 local Fusion: any = require(ReplicatedStorage.Packages.fusion)
 local Children: any = Fusion.Children
@@ -146,7 +146,7 @@ function Creator:Initialize()
 			
 			Label:Create {
 				Name = "GamepadControls",
-				Text = "Sprint: <b>RT</b><br />Crawl: <font color='#40CCD0'><b>X</b></font><br />Flashlight: <b>>R</b>",
+				Text = "Sprint: <b>RT</b><br />Crawl: <font color='#40CCD0'><b>X</b></font><br />Flashlight: <b>>L</b>",
 				Size = UDim2.new(0.15, 0, 0.3, 0),
 				Position = UDim2.new(0, 0, 1, 0)
 			}

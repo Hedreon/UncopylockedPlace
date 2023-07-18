@@ -4,6 +4,7 @@
     "$className": "DataModel",
 
     "Workspace": {
+      "$className": "Workspace",
       "$properties": {
         "FilteringEnabled": true,
         "StreamingEnabled": true,
@@ -13,6 +14,13 @@
       },
       "$path": "src/Workspace",
       "$ignoreUnknownInstances": true
+    },
+
+    "Players": {
+      "$className": "Players",
+      "$properties": {
+        "RespawnTime": 2
+      }
     },
 
     "Lighting": {

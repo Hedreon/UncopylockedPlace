@@ -248,7 +248,7 @@
 					<bool name="CastShadow">true</bool>
 					<string name="CollisionGroup">Default</string>
 					<int name="CollisionGroupId">0</int>
-					<Color3uint8 name="Color3uint8">4278190080</Color3uint8>
+					<Color3uint8 name="Color3uint8">4279970357</Color3uint8>
 					<PhysicalProperties name="CustomPhysicalProperties">
 						<CustomPhysics>false</CustomPhysics>
 					</PhysicalProperties>
@@ -263,7 +263,7 @@
 					<token name="LeftSurfaceInput">0</token>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
-					<token name="Material">288</token>
+					<token name="Material">256</token>
 					<string name="MaterialVariantSerialized"></string>
 					<string name="Name">Floor</string>
 					<CoordinateFrame name="PivotOffset">
@@ -344,7 +344,7 @@
 					<bool name="CastShadow">true</bool>
 					<string name="CollisionGroup">Default</string>
 					<int name="CollisionGroupId">0</int>
-					<Color3uint8 name="Color3uint8">4278190080</Color3uint8>
+					<Color3uint8 name="Color3uint8">4279970357</Color3uint8>
 					<PhysicalProperties name="CustomPhysicalProperties">
 						<CustomPhysics>false</CustomPhysics>
 					</PhysicalProperties>
@@ -359,7 +359,7 @@
 					<token name="LeftSurfaceInput">0</token>
 					<bool name="Locked">false</bool>
 					<bool name="Massless">false</bool>
-					<token name="Material">288</token>
+					<token name="Material">256</token>
 					<string name="MaterialVariantSerialized"></string>
 					<string name="Name">Roof</string>
 					<CoordinateFrame name="PivotOffset">
@@ -488,7 +488,7 @@
 						<bool name="CastShadow">true</bool>
 						<string name="CollisionGroup">Default</string>
 						<int name="CollisionGroupId">0</int>
-						<Color3uint8 name="Color3uint8">4278190080</Color3uint8>
+						<Color3uint8 name="Color3uint8">4279970357</Color3uint8>
 						<PhysicalProperties name="CustomPhysicalProperties">
 							<CustomPhysics>false</CustomPhysics>
 						</PhysicalProperties>
@@ -503,7 +503,7 @@
 						<token name="LeftSurfaceInput">0</token>
 						<bool name="Locked">false</bool>
 						<bool name="Massless">false</bool>
-						<token name="Material">288</token>
+						<token name="Material">256</token>
 						<string name="MaterialVariantSerialized"></string>
 						<string name="Name">Wall</string>
 						<CoordinateFrame name="PivotOffset">
@@ -584,7 +584,7 @@
 						<bool name="CastShadow">true</bool>
 						<string name="CollisionGroup">Default</string>
 						<int name="CollisionGroupId">0</int>
-						<Color3uint8 name="Color3uint8">4278190080</Color3uint8>
+						<Color3uint8 name="Color3uint8">4279970357</Color3uint8>
 						<PhysicalProperties name="CustomPhysicalProperties">
 							<CustomPhysics>false</CustomPhysics>
 						</PhysicalProperties>
@@ -599,7 +599,7 @@
 						<token name="LeftSurfaceInput">0</token>
 						<bool name="Locked">false</bool>
 						<bool name="Massless">false</bool>
-						<token name="Material">288</token>
+						<token name="Material">256</token>
 						<string name="MaterialVariantSerialized"></string>
 						<string name="Name">Wall</string>
 						<CoordinateFrame name="PivotOffset">
@@ -862,7 +862,7 @@
 						<bool name="CastShadow">true</bool>
 						<string name="CollisionGroup">Default</string>
 						<int name="CollisionGroupId">0</int>
-						<Color3uint8 name="Color3uint8">4278190080</Color3uint8>
+						<Color3uint8 name="Color3uint8">4279970357</Color3uint8>
 						<PhysicalProperties name="CustomPhysicalProperties">
 							<CustomPhysics>false</CustomPhysics>
 						</PhysicalProperties>
@@ -877,7 +877,7 @@
 						<token name="LeftSurfaceInput">0</token>
 						<bool name="Locked">false</bool>
 						<bool name="Massless">false</bool>
-						<token name="Material">288</token>
+						<token name="Material">256</token>
 						<string name="MaterialVariantSerialized"></string>
 						<string name="Name">Wall</string>
 						<CoordinateFrame name="PivotOffset">
@@ -958,7 +958,7 @@
 						<bool name="CastShadow">true</bool>
 						<string name="CollisionGroup">Default</string>
 						<int name="CollisionGroupId">0</int>
-						<Color3uint8 name="Color3uint8">4278190080</Color3uint8>
+						<Color3uint8 name="Color3uint8">4279970357</Color3uint8>
 						<PhysicalProperties name="CustomPhysicalProperties">
 							<CustomPhysics>false</CustomPhysics>
 						</PhysicalProperties>
@@ -973,7 +973,7 @@
 						<token name="LeftSurfaceInput">0</token>
 						<bool name="Locked">false</bool>
 						<bool name="Massless">false</bool>
-						<token name="Material">288</token>
+						<token name="Material">256</token>
 						<string name="MaterialVariantSerialized"></string>
 						<string name="Name">Wall</string>
 						<CoordinateFrame name="PivotOffset">
@@ -1054,7 +1054,7 @@
 						<bool name="CastShadow">true</bool>
 						<string name="CollisionGroup">Default</string>
 						<int name="CollisionGroupId">0</int>
-						<Color3uint8 name="Color3uint8">4278190080</Color3uint8>
+						<Color3uint8 name="Color3uint8">4279970357</Color3uint8>
 						<PhysicalProperties name="CustomPhysicalProperties">
 							<CustomPhysics>false</CustomPhysics>
 						</PhysicalProperties>
@@ -1069,7 +1069,7 @@
 						<token name="LeftSurfaceInput">0</token>
 						<bool name="Locked">false</bool>
 						<bool name="Massless">false</bool>
-						<token name="Material">288</token>
+						<token name="Material">256</token>
 						<string name="MaterialVariantSerialized"></string>
 						<string name="Name">Wall</string>
 						<CoordinateFrame name="PivotOffset">
@@ -1150,7 +1150,7 @@
 						<bool name="CastShadow">true</bool>
 						<string name="CollisionGroup">Default</string>
 						<int name="CollisionGroupId">0</int>
-						<Color3uint8 name="Color3uint8">4278190080</Color3uint8>
+						<Color3uint8 name="Color3uint8">4279970357</Color3uint8>
 						<PhysicalProperties name="CustomPhysicalProperties">
 							<CustomPhysics>false</CustomPhysics>
 						</PhysicalProperties>
@@ -1165,7 +1165,7 @@
 						<token name="LeftSurfaceInput">0</token>
 						<bool name="Locked">false</bool>
 						<bool name="Massless">false</bool>
-						<token name="Material">288</token>
+						<token name="Material">256</token>
 						<string name="MaterialVariantSerialized"></string>
 						<string name="Name">Wall</string>
 						<CoordinateFrame name="PivotOffset">
@@ -1295,7 +1295,7 @@
 						<bool name="CastShadow">true</bool>
 						<string name="CollisionGroup">Default</string>
 						<int name="CollisionGroupId">0</int>
-						<Color3uint8 name="Color3uint8">4278190080</Color3uint8>
+						<Color3uint8 name="Color3uint8">4279970357</Color3uint8>
 						<PhysicalProperties name="CustomPhysicalProperties">
 							<CustomPhysics>false</CustomPhysics>
 						</PhysicalProperties>
@@ -1310,7 +1310,7 @@
 						<token name="LeftSurfaceInput">0</token>
 						<bool name="Locked">false</bool>
 						<bool name="Massless">false</bool>
-						<token name="Material">288</token>
+						<token name="Material">256</token>
 						<string name="MaterialVariantSerialized"></string>
 						<string name="Name">Step</string>
 						<CoordinateFrame name="PivotOffset">
@@ -1391,7 +1391,7 @@
 						<bool name="CastShadow">true</bool>
 						<string name="CollisionGroup">Default</string>
 						<int name="CollisionGroupId">0</int>
-						<Color3uint8 name="Color3uint8">4278190080</Color3uint8>
+						<Color3uint8 name="Color3uint8">4279970357</Color3uint8>
 						<PhysicalProperties name="CustomPhysicalProperties">
 							<CustomPhysics>false</CustomPhysics>
 						</PhysicalProperties>
@@ -1406,7 +1406,7 @@
 						<token name="LeftSurfaceInput">0</token>
 						<bool name="Locked">false</bool>
 						<bool name="Massless">false</bool>
-						<token name="Material">288</token>
+						<token name="Material">256</token>
 						<string name="MaterialVariantSerialized"></string>
 						<string name="Name">Step</string>
 						<CoordinateFrame name="PivotOffset">
