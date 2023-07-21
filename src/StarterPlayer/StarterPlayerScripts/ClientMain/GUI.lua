@@ -1,15 +1,13 @@
 local GUI: any = {}
 
-local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ReplicatedStorage: any = game:GetService("ReplicatedStorage")
 local Players: Players = game:GetService("Players")
 
-local LocalPlayer: Player? = Players.LocalPlayer
-local PlayerGui: PlayerGui? = LocalPlayer and LocalPlayer:FindFirstChildOfClass("PlayerGui") or nil
-local PlayerScripts: PlayerScripts? = LocalPlayer and LocalPlayer:FindFirstChildOfClass("PlayerScripts") or nil
+local LocalPlayer: any? = Players.LocalPlayer
+local PlayerGui: PlayerGui? = if LocalPlayer then LocalPlayer.PlayerGui else nil
+local PlayerScripts: PlayerScripts = if LocalPlayer then LocalPlayer.PlayerScripts else nil
 
-local LayoutHandler: Instance? = PlayerScripts and PlayerScripts:WaitForChild("LayoutHandler") or nil
-local LayoutChanged: Instance? = LayoutHandler and LayoutHandler:FindFirstChild("LayoutChanged") or nil
-local GetLayout: Instance? = LayoutHandler and LayoutHandler:FindFirstChild("GetLayout") or nil
+local LayoutHandler: any = PlayerScripts:WaitForChild("LayoutHandler")
 
 local LayoutToDetect: any = {
 	["MouseKeyboard"] = "PC",
@@ -17,12 +15,10 @@ local LayoutToDetect: any = {
 	["Gamepad"] = "Gamepad"
 }
 
-local InvokeLayout: any = if GetLayout and GetLayout:IsA("BindableFunction") then GetLayout:Invoke() else nil
+local InvokeLayout: any = LayoutHandler.GetLayout:Invoke()
 local DetectFromLayout: any = LayoutToDetect[InvokeLayout]
 
-local Packages: Instance? = ReplicatedStorage:FindFirstChild("Packages")
-
-local Fusion: any = Packages and require(Packages:WaitForChild("fusion")) or nil
+local Fusion: any = require(ReplicatedStorage.Packages.fusion)
 local New: any = Fusion.New
 local Children: any = Fusion.Children
 
@@ -55,28 +51,26 @@ function GUI:Initialize()
 	end
 end
 
-if LayoutChanged and LayoutChanged:IsA("BindableEvent") then
-	LayoutChanged.Event:Connect(function(CurrentLayout: string, PreviousLayout: string)
-		DetectFromLayout = LayoutToDetect[PreviousLayout]
-		
-		for _, Child: Instance in script.Parent:GetChildren() do
-			if Child:IsA("GuiObject") then
-				if string.find(Child.Name, DetectFromLayout) then
-					Child.Visible = false
-				end
-			end
-		end
+LayoutHandler.LayoutChanged.Event:Connect(function(CurrentLayout: string, PreviousLayout: string)
+	DetectFromLayout = LayoutToDetect[PreviousLayout]
 	
-		DetectFromLayout = LayoutToDetect[CurrentLayout]
-		
-		for _, Child: Instance in script.Parent:GetChildren() do
-			if Child:IsA("GuiObject") then
-				if string.find(Child.Name, DetectFromLayout) then
-					Child.Visible = true
-				end
+	for _, Child: Instance in script.Parent:GetChildren() do
+		if Child:IsA("GuiObject") then
+			if string.find(Child.Name, DetectFromLayout) then
+				Child.Visible = false
 			end
 		end
-	end)
-end
+	end
+
+	DetectFromLayout = LayoutToDetect[CurrentLayout]
+	
+	for _, Child: Instance in script.Parent:GetChildren() do
+		if Child:IsA("GuiObject") then
+			if string.find(Child.Name, DetectFromLayout) then
+				Child.Visible = true
+			end
+		end
+	end
+end)
 
 return GUI

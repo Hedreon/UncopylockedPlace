@@ -1,10 +1,8 @@
 local TransparentFrame: any = {}
 
-local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ReplicatedStorage: any = game:GetService("ReplicatedStorage")
 
-local Packages: Instance? = ReplicatedStorage:FindFirstChild("Packages")
-
-local Fusion: any = Packages and require(Packages:WaitForChild("fusion")) or nil
+local Fusion: any = require(ReplicatedStorage.Packages.fusion)
 local New: any = Fusion.New
 local Children: any = Fusion.Children
 

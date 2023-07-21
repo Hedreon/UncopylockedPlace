@@ -1,15 +1,14 @@
 local Creator: any = {}
 
-local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ReplicatedStorage: any = game:GetService("ReplicatedStorage")
 local Players: Players = game:GetService("Players")
 
-local LocalPlayer: Player? = Players.LocalPlayer
-local Character: Model? = if LocalPlayer then LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait() else nil
-local PlayerGui: PlayerGui? = LocalPlayer and LocalPlayer:FindFirstChildOfClass("PlayerGui") or nil
-local PlayerScripts: PlayerScripts? = LocalPlayer and LocalPlayer:FindFirstChildOfClass("PlayerScripts") or nil
+local LocalPlayer: any = Players.LocalPlayer
+local Character: Model = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+local PlayerGui: PlayerGui = if LocalPlayer then LocalPlayer.PlayerGui else nil
+local PlayerScripts: PlayerScripts = if LocalPlayer then LocalPlayer.PlayerScripts else nil
 
-local LayoutHandler: Instance? = PlayerScripts and PlayerScripts:WaitForChild("LayoutHandler") or nil
-local GetLayout: Instance? = LayoutHandler and LayoutHandler:FindFirstChild("GetLayout") or nil
+local LayoutHandler: any = PlayerScripts:WaitForChild("LayoutHandler")
 
 local LayoutToDetect: any = {
 	["MouseKeyboard"] = "PC",
@@ -17,15 +16,13 @@ local LayoutToDetect: any = {
 	["Gamepad"] = "Gamepad"
 }
 
-local InvokeLayout: any = if GetLayout and GetLayout:IsA("BindableFunction") then GetLayout:Invoke() else nil
+local InvokeLayout: any = LayoutHandler.GetLayout:Invoke()
 local DetectFromLayout: any = LayoutToDetect[InvokeLayout]
 
-local Movement: any = Character and require(Character:WaitForChild("Movement")) or nil
-local Flashlight: any = PlayerScripts and require(PlayerScripts:WaitForChild("Flashlight")) or nil
+local Movement: any = require(Character:WaitForChild("Movement"))
+local Flashlight: any = require(PlayerScripts:WaitForChild("Flashlight"))
 
-local Packages: Instance? = ReplicatedStorage:FindFirstChild("Packages")
-
-local Fusion: any = Packages and require(Packages:WaitForChild("fusion")) or nil
+local Fusion: any = require(ReplicatedStorage.Packages.fusion)
 local Children: any = Fusion.Children
 
 local TransparentFrame: any = require(script.Addons.TransparentFrame)
@@ -54,10 +51,10 @@ function Creator:Initialize()
 				AnchorPoint = Vector2.new(0, 1),
 
 				OnClick = function()
-					local MainFrame: Instance? = PlayerGui and PlayerGui:WaitForChild("MainGui"):WaitForChild("MainFrame") or nil
-					local PCGamepadControlsButton: Instance? = MainFrame and MainFrame:WaitForChild("PCGamepadControlsButton") or nil
-					local PCControlsLabel: Instance? = MainFrame and MainFrame:WaitForChild("PCControlsLabel") or nil
-					local GamepadControlsLabel: Instance? = MainFrame and MainFrame:WaitForChild("GamepadControlsLabel") or nil
+					local MainFrame: Instance? = if PlayerGui then PlayerGui:WaitForChild("MainGui"):WaitForChild("MainFrame") else nil
+					local PCGamepadControlsButton: Instance? = if MainFrame then MainFrame:WaitForChild("PCGamepadControlsButton") else nil
+					local PCControlsLabel: Instance? = if MainFrame then MainFrame:WaitForChild("PCControlsLabel") else nil
+					local GamepadControlsLabel: Instance? = if MainFrame then MainFrame:WaitForChild("GamepadControlsLabel") else nil
 
 					if PCGamepadControlsButton and PCControlsLabel and GamepadControlsLabel then
 						if PCGamepadControlsButton:IsA("TextButton") and PCControlsLabel:IsA("TextLabel") and GamepadControlsLabel:IsA("TextLabel") then

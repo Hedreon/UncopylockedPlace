@@ -5,7 +5,7 @@ local Players: Players = game:GetService("Players")
 
 local LocalPlayer: Player? = Players.LocalPlayer
 local Character: Model? = if LocalPlayer then LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait() else nil
-local HumanoidRootPart: Instance? = Character and Character:WaitForChild("HumanoidRootPart") or nil
+local HumanoidRootPart: Instance? = if Character then Character:WaitForChild("HumanoidRootPart") else nil
 
 local TweenData: TweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, 0, false, 0)
 
