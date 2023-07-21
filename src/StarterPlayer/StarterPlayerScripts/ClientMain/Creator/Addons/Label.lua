@@ -1,8 +1,10 @@
 local Label: any = {}
 
-local ReplicatedStorage: any = game:GetService("ReplicatedStorage")
+local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local Fusion: any = require(ReplicatedStorage.Packages.fusion)
+local Packages: Instance? = ReplicatedStorage:FindFirstChild("Packages")
+
+local Fusion: any = Packages and require(Packages:WaitForChild("fusion")) or nil
 local New: any = Fusion.New
 
 function Label:Create(Properties: any)

@@ -1,5 +1,5 @@
 local Character: Instance? = script.Parent
-local Humanoid: Humanoid? = if Character then Character:FindFirstChildOfClass("Humanoid") else nil
+local Humanoid: Humanoid? = Character and Character:FindFirstChildOfClass("Humanoid") or nil
 
 while true do
 	if Humanoid then

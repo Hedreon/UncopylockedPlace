@@ -4,7 +4,7 @@ local Players: Players = game:GetService("Players")
 
 local LocalPlayer: Player? = Players.LocalPlayer
 local Character: Model? = if LocalPlayer then LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait() else nil
-local Humanoid: Humanoid? = if Character then Character:FindFirstChildOfClass("Humanoid") else nil
+local Humanoid: Humanoid? = Character and Character:FindFirstChildOfClass("Humanoid") or nil
 
 local SprintMultiplier: number = script:GetAttribute("SprintMultiplier")
 
