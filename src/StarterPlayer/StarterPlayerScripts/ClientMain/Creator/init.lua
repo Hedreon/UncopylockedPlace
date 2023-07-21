@@ -1,14 +1,15 @@
 local Creator: any = {}
 
-local ReplicatedStorage: any = game:GetService("ReplicatedStorage")
+local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players: Players = game:GetService("Players")
 
-local LocalPlayer: any = Players.LocalPlayer
-local Character: Model = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-local PlayerGui: PlayerGui = if LocalPlayer then LocalPlayer.PlayerGui else nil
-local PlayerScripts: PlayerScripts = if LocalPlayer then LocalPlayer.PlayerScripts else nil
+local LocalPlayer: Player? = Players.LocalPlayer
+local Character: Model? = if LocalPlayer then LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait() else nil
+local PlayerGui: PlayerGui? = if LocalPlayer then LocalPlayer:FindFirstChildOfClass("PlayerGui") else nil
+local PlayerScripts: PlayerScripts? = if LocalPlayer then LocalPlayer:FindFirstChildOfClass("PlayerScripts") else nil
 
-local LayoutHandler: any = PlayerScripts:WaitForChild("LayoutHandler")
+local LayoutHandler: Instance? = if PlayerScripts then PlayerScripts:WaitForChild("LayoutHandler") else nil
+local GetLayout: Instance? = if LayoutHandler then LayoutHandler:FindFirstChild("GetLayout") else nil
 
 local LayoutToDetect: any = {
 	["MouseKeyboard"] = "PC",
@@ -16,13 +17,15 @@ local LayoutToDetect: any = {
 	["Gamepad"] = "Gamepad"
 }
 
-local InvokeLayout: any = LayoutHandler.GetLayout:Invoke()
+local InvokeLayout: any = if GetLayout and GetLayout:IsA("BindableFunction") then GetLayout:Invoke() else nil
 local DetectFromLayout: any = LayoutToDetect[InvokeLayout]
 
-local Movement: any = require(Character:WaitForChild("Movement"))
-local Flashlight: any = require(PlayerScripts:WaitForChild("Flashlight"))
+local Movement: any = if Character then require(Character:WaitForChild("Movement")) else nil
+local Flashlight: any = if PlayerScripts then require(PlayerScripts:WaitForChild("Flashlight")) else nil
 
-local Fusion: any = require(ReplicatedStorage.Packages.fusion)
+local Packages: Instance? = ReplicatedStorage:FindFirstChild("Packages")
+
+local Fusion: any = if Packages then require(Packages:WaitForChild("fusion")) else nil
 local Children: any = Fusion.Children
 
 local TransparentFrame: any = require(script.Addons.TransparentFrame)
