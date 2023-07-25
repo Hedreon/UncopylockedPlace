@@ -1,4 +1,4 @@
-local Flashlight: any = {}
+local Flashlight = {}
 
 local TweenService: TweenService = game:GetService("TweenService")
 local Players: Players = game:GetService("Players")

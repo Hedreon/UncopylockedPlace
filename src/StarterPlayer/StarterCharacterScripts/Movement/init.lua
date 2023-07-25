@@ -1,4 +1,4 @@
-local Movement: any = {}
+local Movement = {}
 
 local Players: Players = game:GetService("Players")
 

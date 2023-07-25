@@ -1,4 +1,4 @@
-local CharacterTools: any = {}
+local CharacterTools = {}
 
 local function Warning(...: string)
 	warn("[CharacterTools]", ...)

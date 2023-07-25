@@ -1,4 +1,4 @@
-local Button: any = {}
+local Button = {}
 
 local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
 

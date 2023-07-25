@@ -1,4 +1,4 @@
-local Creator: any = {}
+local Creator = {}
 
 local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players: Players = game:GetService("Players")

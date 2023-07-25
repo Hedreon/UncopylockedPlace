@@ -1,4 +1,4 @@
-local TransparentFrame: any = {}
+local TransparentFrame = {}
 
 local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
 

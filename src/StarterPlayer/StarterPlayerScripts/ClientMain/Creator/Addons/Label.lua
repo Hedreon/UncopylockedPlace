@@ -1,4 +1,4 @@
-local Label: any = {}
+local Label = {}
 
 local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
 

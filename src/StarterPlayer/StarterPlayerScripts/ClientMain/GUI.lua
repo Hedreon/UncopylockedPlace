@@ -1,4 +1,4 @@
-local GUI: any = {}
+local GUI = {}
 
 local ReplicatedStorage: ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players: Players = game:GetService("Players")
