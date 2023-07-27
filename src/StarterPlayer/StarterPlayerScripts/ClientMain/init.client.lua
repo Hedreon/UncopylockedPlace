@@ -1,2 +1,2 @@
-local GUI: any = require(script.GUI)
+local GUI = require(script.GUI)
 GUI:Initialize()

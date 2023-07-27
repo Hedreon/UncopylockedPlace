@@ -8,7 +8,7 @@ local Fusion: any = if Packages then require(Packages:WaitForChild("fusion")) el
 local New: any = Fusion.New
 local OnEvent: any = Fusion.OnEvent
 
-function Button:Create(Properties: any)
+function Button:Create(Properties: {Name: string, Text: string, Size: UDim2, Position: UDim2, AnchorPoint: Vector2, OnClick: any})
 	return New "TextButton" {
 		BackgroundColor3 = Color3.new(0, 0, 0),
 		BackgroundTransparency = 0.5,

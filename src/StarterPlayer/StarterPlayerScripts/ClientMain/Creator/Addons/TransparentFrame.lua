@@ -8,7 +8,7 @@ local Fusion: any = if Packages then require(Packages:WaitForChild("fusion")) el
 local New: any = Fusion.New
 local Children: any = Fusion.Children
 
-function TransparentFrame:Create(Properties: any)
+function TransparentFrame:Create(Properties: {Name: string, Size: UDim2, Position: UDim2, [any]: any})
 	return New "Frame" {
 		BackgroundTransparency = 1,
 
