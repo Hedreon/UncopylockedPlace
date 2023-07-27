@@ -24,4 +24,4 @@ Things I want to open-source on [Roblox](https://www.roblox.com/games/5355482910
 
 	to install all the necessary packages and dependencies needed for the game to properly work.
 
-4. Click on **Rojo** in the Activity Bar then follow all the on-screen steps to build the compiled `.rbxl` file and serving it.
+4. Click on **Rojo** in the Activity Bar then follow all the on-screen steps to build and serve the `.rbxl` file.
