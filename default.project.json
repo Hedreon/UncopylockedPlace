@@ -109,7 +109,9 @@
       "Packages": {
         "$className": "Folder",
         "$path": "Packages"
-      }
+      },
+
+      "$path": "src/ReplicatedStorage"
     },
 
     "StarterPack": {
