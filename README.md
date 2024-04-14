@@ -1,27 +1,21 @@
 # Uncopylocked Place
 
-Things I want to open-source on [Roblox](https://www.roblox.com/games/5355482910).
+Things I want to make [open-source on Roblox.](https://rblx.games/5355482910)
 
 ## Building from source
 
-1. Clone the repository via GitHub Desktop or Git
+1. Clone the repository with a Git client of your choice.
 
-2. Make sure you have all the following prerequisites installed:
+2. Make sure you have the following prerequisites installed:
 
-    - Rojo (Aftman is automatically installed)
+	- [Aftman](https://github.com/LPGhatguy/aftman#installation)
 
-3. Run the following commands:
+    - [Rojo](https://rojo.space/docs/v7/getting-started/installation)
+
+3. Run the following command to install the necessary dependencies needed by the game:
 
     ```
-	aftman install
-	```
-	
-	Then,
-
-	```
-	wally install
+	aftman install && wally install
 	```
 
-	to install all the necessary packages and dependencies needed for the game to properly work.
-
-4. Click on **Rojo** in the Activity Bar then follow all the on-screen steps to build and serve the `.rbxl` file.
+4. Click the **Rojo** button in the status bar to follow the on-screen steps to build and serve the `.rbxl` file.

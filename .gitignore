@@ -1,4 +1,4 @@
-# Project place files
+# Place files
 *.rbxlx
 *.rbxl
 
@@ -8,5 +8,5 @@
 # Wally packages
 Packages/
 
-# LSP sourcemaps
+# Source maps
 sourcemap.json

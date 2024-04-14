@@ -1,0 +1,9 @@
+{
+    "properties": {
+        "Attributes": {
+			"Crawling": {
+                "Bool": false
+            }
+		}
+    }
+}

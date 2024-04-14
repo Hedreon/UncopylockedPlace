@@ -1,10 +1,12 @@
 {
 	"className": "Tool",
 	"properties": {
+		"TextureId": "rbxassetid://131690489",
+		"CanBeDropped": false,
 		"Grip": [
 			0,
 			0,
-			0.6,
+			0.75,
 			1,
 			0,
 			0,
@@ -14,8 +16,6 @@
 			0,
 			0,
 			1
-		],
-		"CanBeDropped": false
-	},
-	"ignoreUnknownInstances": true
+		]
+	}
 }

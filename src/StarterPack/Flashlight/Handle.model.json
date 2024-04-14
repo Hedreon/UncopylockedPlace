@@ -1,0 +1,34 @@
+{
+	"ClassName": "MeshPart",
+	"Properties": {
+		"MeshId": "rbxassetid://115955313",
+		"TextureID": "rbxassetid://115955343",
+		"Size": [
+			0.6,
+			0.6,
+			1.8
+		],
+		"EnableFluidForces": true
+	},
+	"Children": [
+		{
+			"Name": "ClickSound",
+			"ClassName": "Sound",
+			"Properties": {
+				"SoundId": "rbxassetid://115959318",
+				"RollOffMaxDistance": 50,
+				"Volume": 1
+			}
+		},
+		{
+			"Name": "Light",
+			"ClassName": "SpotLight",
+			"Properties": {
+				"Brightness": 2,
+				"Enabled": false,
+				"Range": 32,
+				"Shadows": true
+			}
+		}
+	]
+}

@@ -1,25 +1,38 @@
 {
+  "emitLegacyScripts": false,
   "name": "UncopylockedPlace",
   "tree": {
     "$className": "DataModel",
 
     "Workspace": {
-      "$className": "Workspace",
       "$properties": {
         "FilteringEnabled": true,
+        "SignalBehavior": "Deferred",
         "StreamingEnabled": true,
         "StreamingIntegrityMode": "PauseOutsideLoadedArea",
         "StreamingTargetRadius": 64,
         "StreamOutBehavior": "Opportunistic"
       },
-      "$path": "src/Workspace",
-      "$ignoreUnknownInstances": true
+
+      "Terrain": {
+        "$className": "Terrain",
+
+        "$properties": {
+          "WaterColor": [
+            0.047059,
+            0.329412,
+            0.360785
+          ],
+          "Decoration": true
+        }
+      },
+
+      "$path": "src/Workspace"
     },
 
     "Players": {
-      "$className": "Players",
       "$properties": {
-        "RespawnTime": 2
+        "RespawnTime": 3
       }
     },
 
@@ -30,24 +43,19 @@
           0.27451,
           0.27451
         ],
-        "Brightness": 3,
-        "EnvironmentDiffuseScale": 1,
-        "EnvironmentSpecularScale": 1,
-        "GlobalShadows": true,
         "OutdoorAmbient": [
           0.27451,
           0.27451,
           0.27451
         ],
+        "Brightness": 3,
+        "EnvironmentDiffuseScale": 1,
+        "EnvironmentSpecularScale": 1,
+        "GlobalShadows": true,
         "ShadowSoftness": 0.2,
         "Technology": "ShadowMap",
         "GeographicLatitude": 0,
-        "TimeOfDay": "14:30:00",
-        "Attributes": {
-          "UseCurrentLighting": {
-            "Bool": false
-          }
-        }
+        "TimeOfDay": "14:30:00"
       },
 
       "Atmosphere": {
@@ -73,15 +81,15 @@
         "$className": "Sky",
 
         "$properties": {
-          "MoonTextureId": "rbxassetid://6444320592",
           "SkyboxBk": "rbxassetid://6444884337",
           "SkyboxDn": "rbxassetid://6444884785",
           "SkyboxFt": "rbxassetid://6444884337",
           "SkyboxLf": "rbxassetid://6444884337",
           "SkyboxRt": "rbxassetid://6444884337",
           "SkyboxUp": "rbxassetid://6412503613",
-          "SunAngularSize": 11,
-          "SunTextureId": "rbxassetid://6196665106"
+          "MoonTextureId": "rbxassetid://6444320592",
+          "SunTextureId": "rbxassetid://6196665106",
+          "SunAngularSize": 11
         }
       },
 
@@ -95,6 +103,15 @@
         }
       },
 
+      "DepthOfField": {
+        "$className": "DepthOfFieldEffect",
+        
+        "$properties": {
+          "FarIntensity": 0.1,
+          "InFocusRadius": 30
+        }
+      },
+
       "SunRays": {
         "$className": "SunRaysEffect",
 
@@ -105,13 +122,22 @@
       }
     },
 
+    "MaterialService": {
+      "$properties": {
+        "Use2022Materials": true
+      }
+    },
+
     "ReplicatedStorage": {
       "Packages": {
-        "$className": "Folder",
         "$path": "Packages"
       },
 
       "$path": "src/ReplicatedStorage"
+    },
+
+    "ServerScriptService": {
+      "$path": "src/ServerScriptService"
     },
 
     "StarterPack": {
@@ -119,24 +145,15 @@
     },
 
     "StarterPlayer": {
-      "$className": "StarterPlayer",
-
       "$properties": {
         "CameraMaxZoomDistance": 128,
+        "CharacterUseJumpPower": false,
         "EnableMouseLockOption": false
       },
 
       "StarterPlayerScripts": {
-        "$className": "StarterPlayerScripts",
-        "$ignoreUnknownInstances": true,
         "$path": "src/StarterPlayer/StarterPlayerScripts"
-      },
-
-      "StarterCharacterScripts": {
-        "$path": "src/StarterPlayer/StarterCharacterScripts"
-      },
-      
-      "$ignoreUnknownInstances": true
+      }
     },
 
     "SoundService": {
@@ -148,7 +165,35 @@
     "TextChatService": {
       "$properties": {
         "ChatVersion": "TextChatService"
-      }
+      },
+
+      "ChatWindowConfiguration": {
+        "$className": "ChatWindowConfiguration",
+
+        "$properties": {
+          "FontFace": {
+            "family": "rbxasset://fonts/families/BuilderSans.json",
+            "weight": "Medium",
+            "style": "Normal"
+          },
+          "TextSize": 18
+        }
+      },
+
+      "ChatInputBarConfiguration": {
+        "$className": "ChatInputBarConfiguration",
+
+        "$properties": {
+          "FontFace": {
+            "family": "rbxasset://fonts/families/BuilderSans.json",
+            "weight": "Medium",
+            "style": "Normal"
+          },
+          "TextSize": 18
+        }
+      },
+
+      "$path": "src/TextChatService"
     }
   }
 }
