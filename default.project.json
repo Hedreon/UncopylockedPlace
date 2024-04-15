@@ -1,5 +1,4 @@
 {
-  "emitLegacyScripts": false,
   "name": "UncopylockedPlace",
   "tree": {
     "$className": "DataModel",
