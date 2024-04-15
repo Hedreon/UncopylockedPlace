@@ -36,6 +36,10 @@ function Mobiler:ModifyTouchButton(ActionName: string)
 		TouchButton.MouseButton1Up:Connect(function()
 			TouchButton.ImageColor3 = Color3.new(0, 0, 0)
 		end)
+
+		TouchButton.MouseLeave:Connect(function()
+			TouchButton.ImageColor3 = Color3.new(0, 0, 0)
+		end)
 		
 		local ActionIcon: Instance? = TouchButton:FindFirstChild("ActionIcon")
 		
