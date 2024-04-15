@@ -49,10 +49,10 @@ function GUI:Init()
 		[Children] = {
 			ContainerFrame:Create({
 				Name = "Controls",
+				Visible = false,
 				Size = UDim2.new(0.2, 0, 0.5, 0),
 				Position = UDim2.new(0, 0, 1.4, 0),
 				AnchorPoint = Vector2.new(0, 1),
-				Visible = false,
 				
 				[Children] = {
 					Button:Create({
@@ -68,6 +68,7 @@ function GUI:Init()
 					
 					ContainerFrame:Create({
 						Name = "Content",
+						Visible = true,
 						Size = UDim2.new(1, 0, 0.8, 0),
 						Position = UDim2.new(0, 0, 0.2, 0),
 						

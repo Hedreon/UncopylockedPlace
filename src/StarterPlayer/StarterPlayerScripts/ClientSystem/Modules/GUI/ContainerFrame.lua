@@ -9,13 +9,13 @@ local Fusion = require(Packages:FindFirstChild("fusion"))
 local Children = Fusion.Children
 local New = Fusion.New
 
-function ContainerFrame:Create(Properties: {Name: string, Size: UDim2?, Position: UDim2?, AnchorPoint: Vector2?, Visible: boolean?, [any]: any})
+function ContainerFrame:Create(Properties: {Name: string, Visible: boolean, Size: UDim2, Position: UDim2, AnchorPoint: Vector2?, [any]: any})
 	return New("Frame") {
 		Name = `{Properties.Name}Frame`,
-		Size = Properties.Size or UDim2.new(1, 0, 1, 0),
-		Position = Properties.Position or UDim2.new(0, 0, 0, 0),
+		Visible = Properties.Visible,
+		Size = Properties.Size,
+		Position = Properties.Position,
 		AnchorPoint = Properties.AnchorPoint or Vector2.zero,
-		Visible = Properties.Visible or true,
 		
 		BackgroundTransparency = 1,
 
