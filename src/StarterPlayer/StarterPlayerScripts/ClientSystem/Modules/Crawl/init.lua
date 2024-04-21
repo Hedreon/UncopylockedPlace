@@ -56,7 +56,7 @@ function Crawl:Init()
 		LoadedAnimation = AnimatorTools:LoadAnimation(Humanoid, CrawlAnimation) :: AnimationTrack
 	end)
 
-	ContextActionService:BindAction(Action, HandleAction, true, Enum.KeyCode.C, Enum.KeyCode.ButtonL3)
+	ContextActionService:BindAction(Action, HandleAction, true, Enum.KeyCode.C, Enum.KeyCode.ButtonY)
 	ContextActionService:SetTitle(Action, "Crawl")
 	ContextActionService:SetPosition(Action, UDim2.new(0.55, 0, 0.1, 0))
 

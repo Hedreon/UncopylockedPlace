@@ -83,7 +83,7 @@ function Run:Init()
 
 	GuiService.MenuOpened:Connect(ResetToDefault)
 
-	ContextActionService:BindAction(Action, HandleAction, true, Enum.KeyCode.LeftShift, Enum.KeyCode.RightShift, Enum.KeyCode.ButtonB)
+	ContextActionService:BindAction(Action, HandleAction, true, Enum.KeyCode.LeftShift, Enum.KeyCode.RightShift, Enum.KeyCode.ButtonL3)
 	ContextActionService:SetTitle(Action, "Run")
 	ContextActionService:SetPosition(Action, UDim2.new(0.25, 0, 0.3, 0))
 

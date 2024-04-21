@@ -82,7 +82,7 @@ function GUI:Init()
 							Label:Create({
 								Name = "Console",
 								Visible = false,
-								Text = `Run: <font color="#FF4040"><b>{FormatKeyCode(Enum.KeyCode.ButtonB)}</b></font><br />Crawl: <font color="#CCCCCC"><b>>{FormatKeyCode(Enum.KeyCode.ButtonL3)}</b></font>`
+								Text = `Run: <font color="#CCCCCC"><b>>{FormatKeyCode(Enum.KeyCode.ButtonL3)}</b></font><br />Crawl: <font color="#FFDD00"><b>{FormatKeyCode(Enum.KeyCode.ButtonY)}</b></font>`
 							})
 						}
 					})
