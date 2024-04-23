@@ -7,7 +7,8 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local LocalPlayer = Players.LocalPlayer
 local LocalCharacter = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
-local Humanoid = LocalCharacter:FindFirstChildOfClass("Humanoid")
+local LocalHumanoid = LocalCharacter:FindFirstChildOfClass("Humanoid")
+local LocalRootPart = LocalHumanoid.RootPart
 
 local Modules = ReplicatedStorage:FindFirstChild("Modules")
 local AnimatorTools = require(Modules:FindFirstChild("AnimatorTools"))
@@ -16,7 +17,7 @@ local Mobiler = require(Modules:FindFirstChild("Mobiler"))
 local RunModule = script.Parent:FindFirstChild("Run")
 
 local CrawlAnimation = script:FindFirstChild("CrawlAnimation")
-local LoadedAnimation: AnimationTrack = AnimatorTools:LoadAnimation(Humanoid, CrawlAnimation) :: AnimationTrack
+local LoadedAnimation: AnimationTrack = AnimatorTools:LoadAnimation(LocalHumanoid, CrawlAnimation) :: AnimationTrack
 
 local Action = "ACTION_CRAWL"
 
@@ -31,20 +32,14 @@ local function HandleAction(ActionName: string, InputState: Enum.UserInputState,
 
 			AnimatorTools:PlayTrack(LoadedAnimation, Crawling)
 
-			Humanoid.WalkSpeed = (Crawling and 4) or (RunModule:GetAttribute("Running") and 24 or 16)
+			LoadedAnimation:AdjustSpeed(0)
 
-			Humanoid:GetPropertyChangedSignal("MoveDirection"):Connect(function()
-				if Humanoid.MoveDirection.Magnitude > 0 then
-					if RunModule:GetAttribute("Running") then
-						Humanoid.WalkSpeed = (Crawling and 6) or (RunModule:GetAttribute("Running") and 24 or 16)
-						LoadedAnimation:AdjustSpeed(1.25)
-					else
-						Humanoid.WalkSpeed = (Crawling and 4) or (RunModule:GetAttribute("Running") and 24 or 16)
-						LoadedAnimation:AdjustSpeed(1)
-					end
-				else
-					LoadedAnimation:AdjustSpeed(0)
-				end
+			LocalRootPart.CanCollide = not Crawling
+
+			LocalHumanoid.WalkSpeed = (Crawling and RunModule:GetAttribute("Running") and 6) or (Crawling and 4) or (RunModule:GetAttribute("Running") and 24) or 16
+
+			LocalHumanoid:GetPropertyChangedSignal("MoveDirection"):Connect(function()
+				LoadedAnimation:AdjustSpeed((LocalHumanoid.MoveDirection.Magnitude > 0 and ((RunModule:GetAttribute("Running") and 1.25) or 1)) or 0)
 			end)
 		end
 	end
@@ -52,8 +47,8 @@ end
 
 function Crawl:Init()
 	LocalPlayer.CharacterAdded:Connect(function(Character)
-		Humanoid = Character:FindFirstChildOfClass("Humanoid")
-		LoadedAnimation = AnimatorTools:LoadAnimation(Humanoid, CrawlAnimation) :: AnimationTrack
+		LocalHumanoid = Character:FindFirstChildOfClass("Humanoid")
+		LoadedAnimation = AnimatorTools:LoadAnimation(LocalHumanoid, CrawlAnimation) :: AnimationTrack
 	end)
 
 	ContextActionService:BindAction(Action, HandleAction, true, Enum.KeyCode.C, Enum.KeyCode.ButtonY)

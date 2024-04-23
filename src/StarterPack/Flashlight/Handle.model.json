@@ -4,9 +4,9 @@
 		"MeshId": "rbxassetid://115955313",
 		"TextureID": "rbxassetid://115955343",
 		"Size": [
-			0.6,
-			0.6,
-			1.8
+			1,
+			1,
+			1
 		],
 		"EnableFluidForces": true
 	},
