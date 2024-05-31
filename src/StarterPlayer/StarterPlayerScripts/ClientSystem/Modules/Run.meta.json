@@ -1,9 +1,9 @@
 {
     "properties": {
         "Attributes": {
-			"Running": {
+            "Running": {
                 "Bool": false
             }
-		}
+        }
     }
 }

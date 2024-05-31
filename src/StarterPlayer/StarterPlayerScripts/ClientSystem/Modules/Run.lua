@@ -61,7 +61,7 @@ local function HandleAction(ActionName: string, InputState: Enum.UserInputState,
 	end
 end
 
-local function ResetToDefault()
+local function ResetState()
 	TweenService:Create(CurrentCamera, TweenData, {FieldOfView = OriginalFieldOfView}):Play()
 
 	LocalHumanoid.WalkSpeed = 16
@@ -78,10 +78,10 @@ function Run:Init()
 		LocalHumanoid = Character:FindFirstChildOfClass("Humanoid")
 		CurrentCamera = workspace.CurrentCamera
 
-		ResetToDefault()
+		ResetState()
 	end)
 
-	GuiService.MenuOpened:Connect(ResetToDefault)
+	GuiService.MenuOpened:Connect(ResetState)
 
 	ContextActionService:BindAction(Action, HandleAction, true, Enum.KeyCode.LeftShift, Enum.KeyCode.RightShift, Enum.KeyCode.ButtonL3)
 	ContextActionService:SetTitle(Action, "Run")
