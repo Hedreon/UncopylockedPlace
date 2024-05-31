@@ -56,7 +56,7 @@ function Mobiler:ModifyTouchButton(ActionName: string)
 			TextConstraint.MinTextSize = 8
 			TextConstraint.Parent = ActionTitle
 			
-			ActionTitle.FontFace = Font.fromEnum(Enum.Font.BuilderSansBold)
+			ActionTitle.FontFace = Font.fromEnum(Enum.Font.BuilderSansMedium)
 			ActionTitle.TextScaled = true
 			ActionTitle.TextTransparency = 0.2
 		end
