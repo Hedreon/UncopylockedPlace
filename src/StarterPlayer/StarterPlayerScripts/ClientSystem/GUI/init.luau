@@ -4,6 +4,7 @@ local GUI = {}
 local CollectionService = game:GetService("CollectionService")
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 
 local LocalPlayer = Players.LocalPlayer
@@ -15,19 +16,21 @@ local Fusion = require(Packages:FindFirstChild("fusion"))
 local Children = Fusion.Children
 local New = Fusion.New
 
+local Inputs = script.Parent:FindFirstChild("Inputs")
+local GetLayout = Inputs:FindFirstChild("GetLayout")
+local LayoutChanged = Inputs:FindFirstChild("LayoutChanged")
+
 local Button = require(script:FindFirstChild("Button"))
-local ContainerFrame = require(script:FindFirstChild("ContainerFrame"))
+local Container = require(script:FindFirstChild("Container"))
 local Label = require(script:FindFirstChild("Label"))
 
+local TweenData = TweenInfo.new(0.5, Enum.EasingStyle.Sine)
+
 local ControlsGui = nil
-local ControlsFrame: Frame = nil
+local ControlsFrame = nil
 local ContentFrame = nil
 local DesktopLabel = nil
 local ConsoleLabel = nil
-
-local Laype = script.Parent:FindFirstChild("Laype")
-local GetLayout = Laype:FindFirstChild("GetLayout")
-local LayoutChanged = Laype:FindFirstChild("LayoutChanged")
 
 local LayoutTags = {
 	["Desktop"] = "DesktopUI",
@@ -47,7 +50,7 @@ function GUI:Init()
 		Parent = PlayerGui,
 		
 		[Children] = {
-			ContainerFrame:Create({
+			Container:Create({
 				Name = "Controls",
 				Visible = false,
 				Size = UDim2.new(0.2, 0, 0.5, 0),
@@ -62,11 +65,14 @@ function GUI:Init()
 						
 						OnClick = function()
 							Opened = not Opened
-							ControlsFrame:TweenPosition((Opened and UDim2.new(0, 0, 1, 0)) or UDim2.new(0, 0, 1.4, 0), Enum.EasingDirection.InOut, Enum.EasingStyle.Sine, 0.5)
+
+							TweenService:Create(ControlsFrame, TweenData, {
+								Position = (Opened and UDim2.new(0, 0, 1, 0)) or UDim2.new(0, 0, 1.4, 0)
+							}):Play()
 						end
 					}),
 					
-					ContainerFrame:Create({
+					Container:Create({
 						Name = "Content",
 						Visible = true,
 						Size = UDim2.new(1, 0, 0.8, 0),
@@ -91,11 +97,11 @@ function GUI:Init()
 		}
 	}
 	
-	ControlsFrame = ControlsGui:WaitForChild("ControlsFrame") :: Frame
+	ControlsFrame = ControlsGui:WaitForChild("ControlsFrame")
 	ContentFrame = ControlsFrame:WaitForChild("ContentFrame")
-	DesktopLabel = ContentFrame:FindFirstChild("DesktopLabel")
-	ConsoleLabel = ContentFrame:FindFirstChild("ConsoleLabel")
-	
+	DesktopLabel = ContentFrame:FindFirstChild("DesktopLabel") :: TextLabel
+	ConsoleLabel = ContentFrame:FindFirstChild("ConsoleLabel") :: TextLabel
+
 	CollectionService:AddTag(ControlsFrame, "DesktopUI")
 	CollectionService:AddTag(ControlsFrame, "ConsoleUI")
 	CollectionService:AddTag(DesktopLabel, "DesktopUI")

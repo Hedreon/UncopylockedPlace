@@ -11,13 +11,13 @@ local LocalHumanoid = LocalCharacter:FindFirstChildOfClass("Humanoid")
 local LocalRootPart = LocalHumanoid.RootPart
 
 local Modules = ReplicatedStorage:FindFirstChild("Modules")
+local ActionTools = require(Modules:FindFirstChild("ActionTools"))
 local AnimatorTools = require(Modules:FindFirstChild("AnimatorTools"))
-local Mobiler = require(Modules:FindFirstChild("Mobiler"))
 
 local RunModule = script.Parent:FindFirstChild("Run")
 
 local CrawlAnimation = script:FindFirstChild("CrawlAnimation")
-local LoadedAnimation: AnimationTrack = AnimatorTools:LoadAnimation(LocalHumanoid, CrawlAnimation) :: AnimationTrack
+local LoadedAnimation = AnimatorTools:LoadAnimation(LocalHumanoid, CrawlAnimation) :: AnimationTrack
 
 local Action = "ACTION_CRAWL"
 
@@ -55,7 +55,7 @@ function Crawl:Init()
 	ContextActionService:SetTitle(Action, "Crawl")
 	ContextActionService:SetPosition(Action, UDim2.new(0.55, 0, 0.1, 0))
 
-	Mobiler:ModifyTouchButton(Action)
+	ActionTools:ModifyTouchButton(Action)
 end
 
 return Crawl

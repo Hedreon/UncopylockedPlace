@@ -1,5 +1,5 @@
 --!strict
-local ContainerFrame = {}
+local Container = {}
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
@@ -9,7 +9,7 @@ local Fusion = require(Packages:FindFirstChild("fusion"))
 local Children = Fusion.Children
 local New = Fusion.New
 
-function ContainerFrame:Create(Properties: {Name: string, Visible: boolean, Size: UDim2, Position: UDim2, AnchorPoint: Vector2?, [any]: any})
+function Container:Create(Properties: {Name: string, Visible: boolean, Size: UDim2, Position: UDim2, AnchorPoint: Vector2?, [any]: any})
 	return New("Frame") {
 		Name = `{Properties.Name}Frame`,
 		Visible = Properties.Visible,
@@ -23,4 +23,4 @@ function ContainerFrame:Create(Properties: {Name: string, Visible: boolean, Size
 	}
 end
 
-return ContainerFrame
+return Container

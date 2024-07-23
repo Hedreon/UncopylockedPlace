@@ -1,10 +1,10 @@
 --!strict
-local Mobiler = {}
+local ActionTools = {}
 
 local ContextActionService = game:GetService("ContextActionService")
 
-function Mobiler:ModifyTouchButton(ActionName: string)
-	local TouchButton: Instance? = ContextActionService:GetButton(ActionName)
+function ActionTools:ModifyTouchButton(ActionName: string)
+	local TouchButton = ContextActionService:GetButton(ActionName)
 	
 	if TouchButton and TouchButton:IsA("ImageButton") then
 		local Constraint = Instance.new("UIAspectRatioConstraint")
@@ -41,13 +41,13 @@ function Mobiler:ModifyTouchButton(ActionName: string)
 			TouchButton.ImageColor3 = Color3.new(0, 0, 0)
 		end)
 		
-		local ActionIcon: Instance? = TouchButton:FindFirstChild("ActionIcon")
+		local ActionIcon = TouchButton:FindFirstChild("ActionIcon")
 		
 		if ActionIcon then
 			ActionIcon:Destroy()
 		end
 		
-		local ActionTitle: Instance? = TouchButton:FindFirstChild("ActionTitle")
+		local ActionTitle = TouchButton:FindFirstChild("ActionTitle")
 		
 		if ActionTitle and ActionTitle:IsA("TextLabel") then
 			local TextConstraint = Instance.new("UITextSizeConstraint")
@@ -63,4 +63,4 @@ function Mobiler:ModifyTouchButton(ActionName: string)
 	end
 end
 
-return Mobiler
+return ActionTools

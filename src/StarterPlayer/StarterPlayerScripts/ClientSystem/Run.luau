@@ -12,7 +12,7 @@ local LocalCharacter = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait(
 local LocalHumanoid = LocalCharacter:FindFirstChildOfClass("Humanoid")
 
 local Modules = ReplicatedStorage:FindFirstChild("Modules")
-local Mobiler = require(Modules:FindFirstChild("Mobiler"))
+local ActionTools = require(Modules:FindFirstChild("ActionTools"))
 
 local CrawlModule = script.Parent:FindFirstChild("Crawl")
 
@@ -87,7 +87,7 @@ function Run:Init()
 	ContextActionService:SetTitle(Action, "Run")
 	ContextActionService:SetPosition(Action, UDim2.new(0.25, 0, 0.3, 0))
 
-	Mobiler:ModifyTouchButton(Action)
+	ActionTools:ModifyTouchButton(Action)
 end
 
 return Run

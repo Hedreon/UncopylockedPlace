@@ -1,7 +1,5 @@
 --!strict
-local Modules = script:FindFirstChild("Modules")
-
-for _, Module in Modules:GetChildren() do
+for _, Module in script:GetChildren() do
 	task.spawn(function()
 		local LoadedModule = require(Module) :: never
 		LoadedModule:Init()

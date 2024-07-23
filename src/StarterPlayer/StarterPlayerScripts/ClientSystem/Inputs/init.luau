@@ -1,5 +1,5 @@
 --!strict
-local Laype = {}
+local Inputs = {}
 
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -9,7 +9,7 @@ local LayoutChanged = script:FindFirstChild("LayoutChanged")
 
 local CurrentInputLayout = "Unidentified"
 
-function Laype:Init()
+function Inputs:Init()
 	if UserInputService.MouseEnabled then
 		CurrentInputLayout = "Desktop"
 	elseif #UserInputService:GetConnectedGamepads() > 0 then
@@ -43,4 +43,4 @@ function Laype:Init()
 	end
 end
 
-return Laype
+return Inputs

@@ -1,20 +1,12 @@
 {
-	"ClassName": "MeshPart",
+	"ClassName": "Part",
 	"Properties": {
 		"CastShadow": false,
-		"Color": [
-			0.0509804,
-			0.411765,
-			0.67451
-		],
-		"Material": "ForceField",
-		"MeshId": "rbxassetid://11640745670",
-		"TextureID": "rbxassetid://5101923607",
-		"Size": [
-			2,
-			2,
-			2
-		],
+		"Color": [0.0509804, 0.411765, 0.67451],
+		"Material": "Neon",
+		"Transparency": 0.25,
+		"Size": [2, 2, 2],
+		"Shape": "Ball",
 		"EnableFluidForces": true,
 		"CanCollide": false
 	}
