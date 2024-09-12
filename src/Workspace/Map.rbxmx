@@ -2,7 +2,7 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBX9C4AE5B219E14E1480882B813B995761">
+	<Item class="Folder" referent="RBXC19790054CFB46FAAF00CB20C6977FFB">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -11,7 +11,7 @@
 			<int64 name="SourceAssetId">-1</int64>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="Model" referent="RBXFB86FDD16AEC49ED874B174A9DC37743">
+		<Item class="Model" referent="RBX157649D54355477595D4075ABDB32584">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -61,7 +61,7 @@
 					</CFrame>
 				</OptionalCoordinateFrame>
 			</Properties>
-			<Item class="Part" referent="RBX376A3641533C4EB18C35A43BF67667CC">
+			<Item class="Part" referent="RBX984AD5E21D544DB4ABD0AA8824BE35E1">
 				<Properties>
 					<bool name="Anchored">true</bool>
 					<BinaryString name="AttributesSerialize"></BinaryString>
@@ -159,7 +159,7 @@
 					</Vector3>
 				</Properties>
 			</Item>
-			<Item class="Part" referent="RBX5D02811E91DB493DA016B8F6694816A2">
+			<Item class="Part" referent="RBX1F07668BC2AA4BFABE8F0702CA6A53E4">
 				<Properties>
 					<bool name="Anchored">true</bool>
 					<BinaryString name="AttributesSerialize"></BinaryString>
@@ -257,7 +257,7 @@
 					</Vector3>
 				</Properties>
 			</Item>
-			<Item class="Model" referent="RBXECA60B89B27142279CCF22E8B051A277">
+			<Item class="Model" referent="RBX832C5B4210F744848EB8B077D47452E5">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -307,7 +307,7 @@
 						</CFrame>
 					</OptionalCoordinateFrame>
 				</Properties>
-				<Item class="Part" referent="RBXE0E15E5DDBCF41748845E1C9BAB760DD">
+				<Item class="Part" referent="RBX75072D00363E4692BA4223866D9FDC39">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<BinaryString name="AttributesSerialize"></BinaryString>
@@ -405,7 +405,7 @@
 						</Vector3>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX20A7FB908A244DE1B8861E72615D2D4A">
+				<Item class="Part" referent="RBX53F92040A3B74E4CA65B23C01963DADC">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<BinaryString name="AttributesSerialize"></BinaryString>
@@ -502,137 +502,8 @@
 							<Z>2</Z>
 						</Vector3>
 					</Properties>
-					<Item class="SurfaceGui" referent="RBX2DC64F6094F44034BC2018A689A5F0CC">
-						<Properties>
-							<bool name="Active">true</bool>
-							<Ref name="Adornee">null</Ref>
-							<bool name="AlwaysOnTop">false</bool>
-							<BinaryString name="AttributesSerialize"></BinaryString>
-							<bool name="AutoLocalize">true</bool>
-							<float name="Brightness">1</float>
-							<Vector2 name="CanvasSize">
-								<X>800</X>
-								<Y>600</Y>
-							</Vector2>
-							<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-							<bool name="ClipsDescendants">true</bool>
-							<bool name="DefinesCapabilities">false</bool>
-							<bool name="Enabled">true</bool>
-							<token name="Face">5</token>
-							<float name="LightInfluence">1</float>
-							<float name="MaxDistance">0</float>
-							<string name="Name">SignGui</string>
-							<float name="PixelsPerStud">100</float>
-							<bool name="ResetOnSpawn">true</bool>
-							<Ref name="RootLocalizationTable">null</Ref>
-							<token name="SelectionBehaviorDown">0</token>
-							<token name="SelectionBehaviorLeft">0</token>
-							<token name="SelectionBehaviorRight">0</token>
-							<token name="SelectionBehaviorUp">0</token>
-							<bool name="SelectionGroup">false</bool>
-							<token name="SizingMode">1</token>
-							<int64 name="SourceAssetId">-1</int64>
-							<BinaryString name="Tags"></BinaryString>
-							<float name="ToolPunchThroughDistance">0</float>
-							<token name="ZIndexBehavior">1</token>
-							<float name="ZOffset">0</float>
-						</Properties>
-						<Item class="TextLabel" referent="RBX585B601138B242BF992C36126994970A">
-							<Properties>
-								<bool name="Active">false</bool>
-								<Vector2 name="AnchorPoint">
-									<X>0</X>
-									<Y>0</Y>
-								</Vector2>
-								<BinaryString name="AttributesSerialize"></BinaryString>
-								<bool name="AutoLocalize">true</bool>
-								<token name="AutomaticSize">0</token>
-								<Color3 name="BackgroundColor3">
-									<R>1</R>
-									<G>1</G>
-									<B>1</B>
-								</Color3>
-								<float name="BackgroundTransparency">1</float>
-								<Color3 name="BorderColor3">
-									<R>0</R>
-									<G>0</G>
-									<B>0</B>
-								</Color3>
-								<token name="BorderMode">0</token>
-								<int name="BorderSizePixel">0</int>
-								<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-								<bool name="ClipsDescendants">false</bool>
-								<bool name="DefinesCapabilities">false</bool>
-								<bool name="Draggable">false</bool>
-								<Font name="FontFace">
-									<Family><url>rbxasset://fonts/families/GothamSSm.json</url></Family>
-									<Weight>800</Weight>
-									<Style>Normal</Style>
-								</Font>
-								<bool name="Interactable">true</bool>
-								<int name="LayoutOrder">0</int>
-								<float name="LineHeight">1</float>
-								<string name="LocalizationMatchIdentifier"></string>
-								<string name="LocalizationMatchedSourceText"></string>
-								<int name="MaxVisibleGraphemes">-1</int>
-								<string name="Name">SignLabel</string>
-								<Ref name="NextSelectionDown">null</Ref>
-								<Ref name="NextSelectionLeft">null</Ref>
-								<Ref name="NextSelectionRight">null</Ref>
-								<Ref name="NextSelectionUp">null</Ref>
-								<UDim2 name="Position">
-									<XS>0</XS>
-									<XO>0</XO>
-									<YS>0</YS>
-									<YO>0</YO>
-								</UDim2>
-								<bool name="RichText">false</bool>
-								<Ref name="RootLocalizationTable">null</Ref>
-								<float name="Rotation">0</float>
-								<bool name="Selectable">false</bool>
-								<token name="SelectionBehaviorDown">0</token>
-								<token name="SelectionBehaviorLeft">0</token>
-								<token name="SelectionBehaviorRight">0</token>
-								<token name="SelectionBehaviorUp">0</token>
-								<bool name="SelectionGroup">false</bool>
-								<Ref name="SelectionImageObject">null</Ref>
-								<int name="SelectionOrder">0</int>
-								<UDim2 name="Size">
-									<XS>1</XS>
-									<XO>0</XO>
-									<YS>1</YS>
-									<YO>0</YO>
-								</UDim2>
-								<token name="SizeConstraint">0</token>
-								<int64 name="SourceAssetId">-1</int64>
-								<BinaryString name="Tags"></BinaryString>
-								<string name="Text">Flashlight Testing</string>
-								<Color3 name="TextColor3">
-									<R>1</R>
-									<G>1</G>
-									<B>1</B>
-								</Color3>
-								<token name="TextDirection">0</token>
-								<bool name="TextScaled">true</bool>
-								<float name="TextSize">14</float>
-								<Color3 name="TextStrokeColor3">
-									<R>0</R>
-									<G>0</G>
-									<B>0</B>
-								</Color3>
-								<float name="TextStrokeTransparency">0</float>
-								<float name="TextTransparency">0</float>
-								<token name="TextTruncate">0</token>
-								<bool name="TextWrapped">true</bool>
-								<token name="TextXAlignment">2</token>
-								<token name="TextYAlignment">1</token>
-								<bool name="Visible">true</bool>
-								<int name="ZIndex">1</int>
-							</Properties>
-						</Item>
-					</Item>
 				</Item>
-				<Item class="Part" referent="RBX46C656443D094736B757812C3D3B5124">
+				<Item class="Part" referent="RBXC10BE7B274B44E55BD98F5CFF40F1CC5">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<BinaryString name="AttributesSerialize"></BinaryString>
@@ -730,7 +601,7 @@
 						</Vector3>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX0B267E0C22104C11ADDAFF4FF93A7336">
+				<Item class="Part" referent="RBX98DB69C448EA43E6B191F16E07147902">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<BinaryString name="AttributesSerialize"></BinaryString>
@@ -828,7 +699,7 @@
 						</Vector3>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBXC674FFF3B8084068A4FEAF6759FF54BF">
+				<Item class="Part" referent="RBXB09837E8C31D4B95A7FE0EABF25F9859">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<BinaryString name="AttributesSerialize"></BinaryString>
@@ -926,7 +797,7 @@
 						</Vector3>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX3A6917D5C1464E85835E256B69C4C11C">
+				<Item class="Part" referent="RBX1B4EAAA0DBF042DE8606EF6990B32861">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<BinaryString name="AttributesSerialize"></BinaryString>
@@ -1025,7 +896,7 @@
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Model" referent="RBXF9EA9B6DF0E948A291A960C50D50A95B">
+			<Item class="Model" referent="RBX08EADEC8CF894B94B219613B952BD897">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -1075,7 +946,7 @@
 						</CFrame>
 					</OptionalCoordinateFrame>
 				</Properties>
-				<Item class="Part" referent="RBX9B194AD26CC042D39052F9C64D42A810">
+				<Item class="Part" referent="RBX8F7C3983EA464072A5CAF46124BCCF16">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<BinaryString name="AttributesSerialize"></BinaryString>
@@ -1173,7 +1044,7 @@
 						</Vector3>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBXB160A90024024D358B8E4B2F985C55F2">
+				<Item class="Part" referent="RBXF63C7ECF8B2349F285088F633E8E30CC">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<BinaryString name="AttributesSerialize"></BinaryString>
@@ -1273,7 +1144,7 @@
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Part" referent="RBX621DDD89B43346ED9CB0AB336215C96F">
+		<Item class="Part" referent="RBX5089D6C90AB9420B97A2BDB82394CB50">
 			<Properties>
 				<bool name="Anchored">true</bool>
 				<BinaryString name="AttributesSerialize"></BinaryString>
@@ -1370,7 +1241,7 @@
 					<Z>2048</Z>
 				</Vector3>
 			</Properties>
-			<Item class="Texture" referent="RBXF80EE29FF5104FED830AA25E598AC62C">
+			<Item class="Texture" referent="RBXB268C1AB835F4974A8D1663FBAE56B4B">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -1394,7 +1265,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="SpawnLocation" referent="RBX4FE433B45AF74054B6DCD8AF70C58589">
+		<Item class="SpawnLocation" referent="RBXAF0F8A0B8B02473B884C250B1B8A1952">
 			<Properties>
 				<bool name="AllowTeamChangeOnTouch">false</bool>
 				<bool name="Anchored">true</bool>
@@ -1496,7 +1367,7 @@
 					<Z>12</Z>
 				</Vector3>
 			</Properties>
-			<Item class="Decal" referent="RBX76D385FA793B46549953837808A67F59">
+			<Item class="Decal" referent="RBXC8BE3A41F9B44443B74AB7934703F7D9">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -1516,7 +1387,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="Model" referent="RBXD717D54941414C81B84C023B5B42E2DD">
+		<Item class="Model" referent="RBXE3A27C691E634327AB8DFBBA2ABAFEDD">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -1566,7 +1437,7 @@
 					</CFrame>
 				</OptionalCoordinateFrame>
 			</Properties>
-			<Item class="Part" referent="RBX866F47CF2B084300AB11080F619B4DA7">
+			<Item class="Part" referent="RBXA4850D5CE8F14FF59D5B31C795A09111">
 				<Properties>
 					<bool name="Anchored">true</bool>
 					<BinaryString name="AttributesSerialize">AQAAAAUAAABLaWxscwMB</BinaryString>
@@ -1663,7 +1534,7 @@
 						<Z>4</Z>
 					</Vector3>
 				</Properties>
-				<Item class="PointLight" referent="RBXBF1D3C46FCF74CB6A465F854A03A36AF">
+				<Item class="PointLight" referent="RBXF03A267CCB51409E9D9C3F57AE571E2A">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<float name="Brightness">4</float>
@@ -1682,7 +1553,7 @@
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="SurfaceGui" referent="RBXD4943B67D2674AA0A40521A3F600025B">
+				<Item class="SurfaceGui" referent="RBX1518F3FCEB4F4714AEEDCB21356E471B">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -1717,7 +1588,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBX40C46F866A7A41D0B201441F08F77F0C">
+					<Item class="TextLabel" referent="RBXDF6BCF4341F6489B98400AE1F912073F">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -1760,6 +1631,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>0</XO>
@@ -1811,7 +1683,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX41E075DD5B8D42609294AAA648DFA0BA">
+				<Item class="SurfaceGui" referent="RBX9F2A830483424561991A9E11F2CDD921">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -1846,7 +1718,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBX0A42A3AC3F93485E8AF7A6CA06496426">
+					<Item class="TextLabel" referent="RBX6DB4E02B0A8242D79CC096EC25067DAD">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -1889,6 +1761,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>0</XO>
@@ -1940,7 +1813,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX4266E3C42798464DBDAF7C217C8E9133">
+				<Item class="SurfaceGui" referent="RBX14CB6AC72ACC4A09A1EB81C303211696">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -1975,7 +1848,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBX312897594C024D3E8702E878056C0224">
+					<Item class="TextLabel" referent="RBX84E4D38D094E44EB9A500A6BA899101F">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -2018,6 +1891,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>0</XO>
@@ -2069,7 +1943,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX6370EBC3106343F4AC0316A8D85BA0D0">
+				<Item class="SurfaceGui" referent="RBX0316D562D0564748BEEDAF71CEC0629B">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -2104,7 +1978,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBX3F254C873290456DB27B09FDB5691A9B">
+					<Item class="TextLabel" referent="RBX874FFBF97CAE49E49D8CD9773DB98E99">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -2147,6 +2021,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>0</XO>
@@ -2198,7 +2073,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBXEE18F5A054D440F597CE390AE546A88A">
+				<Item class="SurfaceGui" referent="RBXA33E12213F634F4E897B9BC21E524589">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -2233,7 +2108,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBXBF856347D30D45E986A9E3B7C2EF6256">
+					<Item class="TextLabel" referent="RBX4269216649184A3D8E8B5F6462DDA1AF">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -2276,6 +2151,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>0</XO>
@@ -2328,7 +2204,7 @@
 					</Item>
 				</Item>
 			</Item>
-			<Item class="Part" referent="RBX5326DCC81AD94281BC4021BCB9D4D09C">
+			<Item class="Part" referent="RBX42B06971070B414297BC45E7176519E2">
 				<Properties>
 					<bool name="Anchored">true</bool>
 					<BinaryString name="AttributesSerialize">AgAAAAYAAABEYW1hZ2UGAAAAAAAAOUAHAAAAVGltZW91dAYAAAAAAADwPw==</BinaryString>
@@ -2425,7 +2301,7 @@
 						<Z>4</Z>
 					</Vector3>
 				</Properties>
-				<Item class="PointLight" referent="RBX5470F3EDCC664431A048FB5A2E958E89">
+				<Item class="PointLight" referent="RBX62205FF3A7584E1C991F1446672E94C3">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<float name="Brightness">4</float>
@@ -2444,7 +2320,7 @@
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX4CAFEA84C0624F1FB745DD18DFAB3418">
+				<Item class="SurfaceGui" referent="RBX4D4E69C538864AD2828D4E4BF2D07EF7">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -2479,7 +2355,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBXD984521803BA428D86452E0D6FC090B7">
+					<Item class="TextLabel" referent="RBX4B6B16C2CC6B47B9A3910DC5677D3523">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -2522,6 +2398,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>0</XO>
@@ -2573,7 +2450,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX31972B90FB02438B814B0360D99BAB94">
+				<Item class="SurfaceGui" referent="RBX41D1BE1F5FAC430C98B1AA09FB98C0C5">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -2608,7 +2485,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBX6D5A4981953D434CA8BAEF54AEED0DC5">
+					<Item class="TextLabel" referent="RBXA8819566429C419BA2FEB5D1E6289F51">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -2651,6 +2528,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>0</XO>
@@ -2702,7 +2580,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX0AD331B35CEF4B7C98EFBCCC86CEFEF8">
+				<Item class="SurfaceGui" referent="RBX0EF97CC9C94B433CB8D482F62F5CAE18">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -2737,7 +2615,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBX3EB83BBA0660424EAB334C82FE1F1EFC">
+					<Item class="TextLabel" referent="RBX619B0B6C40F442ADB2FB37075526C2F5">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -2780,6 +2658,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>0</XO>
@@ -2831,7 +2710,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX201E197898A34E9593DE34D1907979FC">
+				<Item class="SurfaceGui" referent="RBX7799B9A4C7A847BDA0C5DE43B8A23DEF">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -2866,7 +2745,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBXB268B1B4973A4A60A4F440DAFAF8A627">
+					<Item class="TextLabel" referent="RBXBDDE91F1C4334BF7A69A61A4FE23FCA6">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -2909,6 +2788,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>0</XO>
@@ -2960,7 +2840,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBXB72DCE98ED104C479BFEA47632F83394">
+				<Item class="SurfaceGui" referent="RBXD52EBC9CBAC3486D95CE1037B9007DCF">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -2995,7 +2875,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBXF3332E6EF4DF43A7BAF9294A0E6C2A6B">
+					<Item class="TextLabel" referent="RBX546B066C2D694F32A9BE6B09A78F336C">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -3038,6 +2918,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>0</XO>
@@ -3091,7 +2972,7 @@
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Model" referent="RBX1686A84B6F964A13B033C00B1BD83CE4">
+		<Item class="Model" referent="RBX5C8B879C0F3D4D1C86468178A616EFAF">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -3141,7 +3022,7 @@
 					</CFrame>
 				</OptionalCoordinateFrame>
 			</Properties>
-			<Item class="Part" referent="RBX39BD9B5E15364250B3A5C3D7CDEF2E38">
+			<Item class="Part" referent="RBX7979A8F6B83845558067BF90F8CD2F6E">
 				<Properties>
 					<bool name="Anchored">true</bool>
 					<BinaryString name="AttributesSerialize"></BinaryString>
@@ -3238,7 +3119,7 @@
 						<Z>16</Z>
 					</Vector3>
 				</Properties>
-				<Item class="SurfaceGui" referent="RBX59FA191CB77C47BA8FA1BD05B98E8EB7">
+				<Item class="SurfaceGui" referent="RBXC0F2E0C588B1417FB6FDE2F0D0196F82">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -3273,7 +3154,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBXD7F5682258074BFA83B3CF614B7B1F86">
+					<Item class="TextLabel" referent="RBX6AD25AC7848F4DC394C946F1092427D1">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -3316,6 +3197,7 @@
 							<Ref name="NextSelectionLeft">null</Ref>
 							<Ref name="NextSelectionRight">null</Ref>
 							<Ref name="NextSelectionUp">null</Ref>
+							<string name="OpenTypeFeatures"></string>
 							<UDim2 name="Position">
 								<XS>0</XS>
 								<XO>0</XO>
@@ -3368,7 +3250,7 @@
 					</Item>
 				</Item>
 			</Item>
-			<Item class="Model" referent="RBXC01969D12A8646F79C206A77AF218D24">
+			<Item class="Model" referent="RBX5625B49A33DF4EFF9AD70DDF34E70C3B">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -3418,7 +3300,7 @@
 						</CFrame>
 					</OptionalCoordinateFrame>
 				</Properties>
-				<Item class="Part" referent="RBX05B3B6947BAF4BF695AF0BA8E66B83DF">
+				<Item class="Part" referent="RBXE91F883936194296B8976E9732AF6B7D">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<BinaryString name="AttributesSerialize"></BinaryString>
@@ -3516,7 +3398,7 @@
 						</Vector3>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX455573C239334518BC627D081B9CAFD0">
+				<Item class="Part" referent="RBX6205C891C3D24A9C8231F622F8D16A45">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<BinaryString name="AttributesSerialize"></BinaryString>
@@ -3615,6 +3497,104 @@
 					</Properties>
 				</Item>
 			</Item>
+		</Item>
+		<Item class="Part" referent="RBX53C73614F0C94EDD88D2FDDD721C3C62">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>24</Y>
+					<Z>60</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">false</bool>
+				<bool name="CanQuery">true</bool>
+				<bool name="CanTouch">true</bool>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="CastShadow">true</bool>
+				<string name="CollisionGroup">Default</string>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<bool name="DefinesCapabilities">false</bool>
+				<bool name="EnableFluidForces">true</bool>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="MaterialVariantSerialized"></string>
+				<string name="Name">Flashlight Hut</string>
+				<CoordinateFrame name="PivotOffset">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<int64 name="SourceAssetId">-1</int64>
+				<BinaryString name="Tags">UG9pbnRPZkludGVyZXN0</BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">1</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
 		</Item>
 	</Item>
 	<SharedStrings>

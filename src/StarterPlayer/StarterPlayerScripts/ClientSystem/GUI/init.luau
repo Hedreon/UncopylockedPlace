@@ -16,9 +16,9 @@ local Fusion = require(Packages:FindFirstChild("fusion"))
 local Children = Fusion.Children
 local New = Fusion.New
 
-local Inputs = script.Parent:FindFirstChild("Inputs")
-local GetLayout = Inputs:FindFirstChild("GetLayout")
-local LayoutChanged = Inputs:FindFirstChild("LayoutChanged")
+local InputManager = script.Parent:FindFirstChild("InputManager")
+local GetLayout = InputManager:FindFirstChild("GetLayout")
+local LayoutChanged = InputManager:FindFirstChild("LayoutChanged")
 
 local Button = require(script:FindFirstChild("Button"))
 local Container = require(script:FindFirstChild("Container"))
