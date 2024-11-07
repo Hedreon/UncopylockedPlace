@@ -16,7 +16,7 @@ function Container:Create(Properties: {Name: string, Visible: boolean, Size: UDi
 		Size = Properties.Size,
 		Position = Properties.Position,
 		AnchorPoint = Properties.AnchorPoint or Vector2.zero,
-		
+
 		BackgroundTransparency = 1,
 
 		[Children] = Properties[Children]

@@ -13,7 +13,7 @@ function Label:Create(Properties: {Name: string, Visible: boolean, Text: string}
 		Name = `{Properties.Name}Label`,
 		Visible = Properties.Visible,
 		Text = Properties.Text,
-		
+
 		BackgroundColor3 = Color3.new(0, 0, 0),
 		BackgroundTransparency = 0.5,
 		Size = UDim2.new(1, 0, 1, 0),

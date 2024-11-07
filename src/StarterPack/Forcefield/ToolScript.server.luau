@@ -34,11 +34,11 @@ end)
 
 script.Parent.Unequipped:Connect(function()
 	FoundCharacter = script.Parent.Parent.Parent.Character
-	
+
 	Toggled = false
-	
+
 	CreateForceField(Toggled, FoundCharacter)
-	
+
 	FoundCharacter = nil
 	FoundHumanoid = nil
 end)

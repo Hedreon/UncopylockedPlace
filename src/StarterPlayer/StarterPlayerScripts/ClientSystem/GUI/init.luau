@@ -48,7 +48,7 @@ function GUI:Init()
 	ControlsGui = New("ScreenGui") {
 		Name = "ControlsGui",
 		Parent = PlayerGui,
-		
+
 		[Children] = {
 			Container:Create({
 				Name = "Controls",
@@ -56,13 +56,13 @@ function GUI:Init()
 				Size = UDim2.new(0.2, 0, 0.5, 0),
 				Position = UDim2.new(0, 0, 1.4, 0),
 				AnchorPoint = Vector2.new(0, 1),
-				
+
 				[Children] = {
 					Button:Create({
 						Name = "Controls",
 						Size = UDim2.new(1, 0, 0.2, 0),
 						Text = "Controls",
-						
+
 						OnClick = function()
 							Opened = not Opened
 
@@ -71,20 +71,20 @@ function GUI:Init()
 							}):Play()
 						end
 					}),
-					
+
 					Container:Create({
 						Name = "Content",
 						Visible = true,
 						Size = UDim2.new(1, 0, 0.8, 0),
 						Position = UDim2.new(0, 0, 0.2, 0),
-						
+
 						[Children] = {
 							Label:Create({
 								Name = "Desktop",
 								Visible = false,
 								Text = "Run: <font color=\"#CCCCCC\"><b>Shift</b></font><br />Crawl: <font color=\"#CCCCCC\"><b>C</b></font>"
 							}),
-							
+
 							Label:Create({
 								Name = "Console",
 								Visible = false,
@@ -96,7 +96,7 @@ function GUI:Init()
 			})
 		}
 	}
-	
+
 	ControlsFrame = ControlsGui:WaitForChild("ControlsFrame")
 	ContentFrame = ControlsFrame:WaitForChild("ContentFrame")
 	DesktopLabel = ContentFrame:FindFirstChild("DesktopLabel") :: TextLabel
@@ -106,29 +106,29 @@ function GUI:Init()
 	CollectionService:AddTag(ControlsFrame, "ConsoleUI")
 	CollectionService:AddTag(DesktopLabel, "DesktopUI")
 	CollectionService:AddTag(ConsoleLabel, "ConsoleUI")
-	
+
 	local InputLayout = GetLayout:Invoke()
 	local TagFromLayout = LayoutTags[InputLayout]
-	
+
 	local UIsToToggle = CollectionService:GetTagged(TagFromLayout)
-	
+
 	for Index = 1, #UIsToToggle do
 		UIsToToggle[Index].Visible = true
 	end
-	
+
 	LayoutChanged.Event:Connect(function(CurrentInputLayout, PreviousInputLayout)
 		TagFromLayout = LayoutTags[PreviousInputLayout]
-		
+
 		local UIsToHide = CollectionService:GetTagged(TagFromLayout)
-		
+
 		for OldIndex = 1, #UIsToHide do
 			UIsToHide[OldIndex].Visible = false
 		end
 
 		TagFromLayout = LayoutTags[CurrentInputLayout]
-		
+
 		local UIsToShow = CollectionService:GetTagged(TagFromLayout)
-		
+
 		for NewIndex = 1, #UIsToShow do
 			UIsToShow[NewIndex].Visible = true
 		end

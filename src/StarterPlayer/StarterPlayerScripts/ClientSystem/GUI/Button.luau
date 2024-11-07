@@ -14,14 +14,14 @@ function Button:Create(Properties: {Name: string, Size: UDim2, Text: string, OnC
 		Name = `{Properties.Name}Button`,
 		Size = Properties.Size,
 		Text = Properties.Text,
-		
+
 		AutoButtonColor = true,
 		BackgroundColor3 = Color3.new(0, 0, 0),
 		BackgroundTransparency = 0.5,
 		FontFace = Font.fromEnum(Enum.Font.BuilderSansBold),
 		TextColor3 = Color3.new(1, 1, 1),
 		TextScaled = true,
-		
+
 		[OnEvent("Activated")] = Properties.OnClick
 	}
 end

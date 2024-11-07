@@ -20,7 +20,7 @@ function InputManager:Init()
 
 	UserInputService.LastInputTypeChanged:Connect(function(LastInputType)
 		local PreviousInputLayout = CurrentInputLayout
-		
+
 		if string.find(LastInputType.Name, "Gamepad") then
 			CurrentInputLayout = "Console"
 		elseif LastInputType.Name == "Keyboard" or string.find(LastInputType.Name, "Mouse") then
@@ -28,17 +28,17 @@ function InputManager:Init()
 		elseif LastInputType.Name == "Touch" then
 			CurrentInputLayout = "Touch"
 		end
-		
+
 		if CurrentInputLayout ~= PreviousInputLayout then
 			LayoutChanged:Fire(CurrentInputLayout, PreviousInputLayout)
 		end
 	end)
-	
+
 	GetLayout.OnInvoke = function()
 		while CurrentInputLayout == "Unidentified" do
 			RunService.Heartbeat:Wait()
 		end
-		
+
 		return CurrentInputLayout
 	end
 end
