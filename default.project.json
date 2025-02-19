@@ -17,11 +17,7 @@
         "$className": "Terrain",
 
         "$properties": {
-          "WaterColor": [
-            0.047059,
-            0.329412,
-            0.360785
-          ],
+          "WaterColor": [0.047059, 0.329412, 0.360785],
           "Decoration": true
         }
       },
@@ -37,16 +33,8 @@
 
     "Lighting": {
       "$properties": {
-        "Ambient": [
-          0.27451,
-          0.27451,
-          0.27451
-        ],
-        "OutdoorAmbient": [
-          0.27451,
-          0.27451,
-          0.27451
-        ],
+        "Ambient": [0.27451, 0.27451, 0.27451],
+        "OutdoorAmbient": [0.27451, 0.27451, 0.27451],
         "Brightness": 3,
         "EnvironmentDiffuseScale": 1,
         "EnvironmentSpecularScale": 1,
@@ -63,16 +51,8 @@
         "$properties": {
           "Density": 0.3,
           "Offset": 0.25,
-          "Color": [
-            0.780394,
-            0.780394,
-            0.780394
-          ],
-          "Decay": [
-            0.415688,
-            0.439216,
-            0.490198
-          ]
+          "Color": [0.780394, 0.780394, 0.780394],
+          "Decay": [0.415688, 0.439216, 0.490198]
         }
       },
 
@@ -104,7 +84,7 @@
 
       "DepthOfField": {
         "$className": "DepthOfFieldEffect",
-        
+
         "$properties": {
           "FarIntensity": 0.1,
           "InFocusRadius": 30

@@ -1,7 +1,7 @@
 --!strict
-for _, Module in script:GetChildren() do
-	task.spawn(function()
-		local LoadedModule = require(Module) :: never
-		LoadedModule:Init()
-	end)
-end
+return {
+	Crawler = require(script:FindFirstChild("Crawler"))(),
+	GUIManager = require(script:FindFirstChild("GUIManager"))(),
+	InputManager = require(script:FindFirstChild("InputManager"))(),
+	Runner = require(script:FindFirstChild("Runner"))()
+}

@@ -2,7 +2,7 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Folder" referent="RBX01252A3631EA44199D804BCF49AFF398">
+	<Item class="Folder" referent="RBX6356B5CCE9ED4F25A92416520BA01B2B">
 		<Properties>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -11,10 +11,11 @@
 			<int64 name="SourceAssetId">-1</int64>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="Part" referent="RBX255C9CDD638E46A494809237E6E3CE42">
+		<Item class="Part" referent="RBX0D6896AEACED41F3A0BEE02A78D6AEC4">
 			<Properties>
 				<bool name="Anchored">true</bool>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<bool name="AudioCanCollide">true</bool>
 				<float name="BackParamA">-0.5</float>
 				<float name="BackParamB">0.5</float>
 				<token name="BackSurface">0</token>
@@ -108,7 +109,7 @@
 					<Z>2048</Z>
 				</Vector3>
 			</Properties>
-			<Item class="Texture" referent="RBX199078D0F2EC469BBAE7F76973941B6C">
+			<Item class="Texture" referent="RBX5E9D8B62CF6D41E080A16D92B8E611E7">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -132,11 +133,12 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="SpawnLocation" referent="RBXC30D6D2D5B56498BA61DC232C5863F85">
+		<Item class="SpawnLocation" referent="RBX3BA3730DCDDD499BAA4BC5CB8347DD20">
 			<Properties>
 				<bool name="AllowTeamChangeOnTouch">false</bool>
 				<bool name="Anchored">true</bool>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<bool name="AudioCanCollide">true</bool>
 				<float name="BackParamA">-0.5</float>
 				<float name="BackParamB">0.5</float>
 				<token name="BackSurface">0</token>
@@ -234,7 +236,7 @@
 					<Z>12</Z>
 				</Vector3>
 			</Properties>
-			<Item class="Decal" referent="RBXED9201B7AFCB49F8A02A7E827BD6EB32">
+			<Item class="Decal" referent="RBX56D9EB8A80D14813A1BA1E268A05E2D2">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -254,7 +256,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="Model" referent="RBXB50E9FD7F6574712AEA1E0F2CFB79A0B">
+		<Item class="Model" referent="RBX8B2F8C9C247F40DAADA904C7F890A46E">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -304,10 +306,11 @@
 					</CFrame>
 				</OptionalCoordinateFrame>
 			</Properties>
-			<Item class="Part" referent="RBX3FFF4514B79C4D94A1740E5CB964096A">
+			<Item class="Part" referent="RBX35CA8692A01F478BB71DDCE2D48C6DFC">
 				<Properties>
 					<bool name="Anchored">true</bool>
-					<BinaryString name="AttributesSerialize">AQAAAAUAAABLaWxscwMB</BinaryString>
+					<BinaryString name="AttributesSerialize">AQAAAAYAAABEZWFkbHkDAQ==</BinaryString>
+					<bool name="AudioCanCollide">true</bool>
 					<float name="BackParamA">-0.5</float>
 					<float name="BackParamB">0.5</float>
 					<token name="BackSurface">0</token>
@@ -401,7 +404,7 @@
 						<Z>4</Z>
 					</Vector3>
 				</Properties>
-				<Item class="PointLight" referent="RBX747233C08B594A0A864D84DB78CF5DFB">
+				<Item class="PointLight" referent="RBX5DE023737405475081CBADD5ED77D171">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<float name="Brightness">4</float>
@@ -420,7 +423,7 @@
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="SurfaceGui" referent="RBXA8BBCA6136A946BB9E6EB1FA526F1695">
+				<Item class="SurfaceGui" referent="RBX745E252CD2E54B1991879962F1DCF4DD">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -455,7 +458,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBXA8C07BB0BC13423498BE845477EAE5DA">
+					<Item class="TextLabel" referent="RBX554AB633AF0345F0A13BE90EC54454A2">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -550,7 +553,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX154C6450B6A741A5840AE4A7182250D7">
+				<Item class="SurfaceGui" referent="RBX9E958E2843834D2D97F1CFA0C1BC0E95">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -585,7 +588,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBXEE52B25F695E42149911408683A218A6">
+					<Item class="TextLabel" referent="RBX7B6D72F228E142D78F928089ED00FA3C">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -680,7 +683,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX4BCFFE99269E488A8A8162F15301EF6B">
+				<Item class="SurfaceGui" referent="RBX712BEBB5CFB746639FD5D1C99CEDB958">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -715,7 +718,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBX3F12FF00DC494C9F817799B93821F6AB">
+					<Item class="TextLabel" referent="RBXC26FEE1EC88C4067A314BBBFBED5E554">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -810,7 +813,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX73B8D24C418C4839880E6A8E0A942869">
+				<Item class="SurfaceGui" referent="RBXEBD3805406704D5F887B77DB54EE46B2">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -845,7 +848,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBX6135DBE1C42A47019E7908A21F7E4E66">
+					<Item class="TextLabel" referent="RBX6A69E133F05B498CA5D7A528968FFF75">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -940,7 +943,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX880D42AB219C4DEB8172D79C59C376D0">
+				<Item class="SurfaceGui" referent="RBXE1F4DFB0E9C94A95A543CB1F82777AF6">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -975,7 +978,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBX384BC3B3C8F14BCB935CA73AAFD3A433">
+					<Item class="TextLabel" referent="RBXAF79BE3B9B124514B74D1CEC00ADA8A7">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -1071,10 +1074,11 @@
 					</Item>
 				</Item>
 			</Item>
-			<Item class="Part" referent="RBXC682014A7E594E4AB7EEC3795D9A0939">
+			<Item class="Part" referent="RBX70815B4E2F514A80B2BD7F32906DAF8C">
 				<Properties>
 					<bool name="Anchored">true</bool>
 					<BinaryString name="AttributesSerialize">AgAAAAYAAABEYW1hZ2UGAAAAAAAAOUAHAAAAVGltZW91dAYAAAAAAADwPw==</BinaryString>
+					<bool name="AudioCanCollide">true</bool>
 					<float name="BackParamA">-0.5</float>
 					<float name="BackParamB">0.5</float>
 					<token name="BackSurface">0</token>
@@ -1168,7 +1172,7 @@
 						<Z>4</Z>
 					</Vector3>
 				</Properties>
-				<Item class="PointLight" referent="RBXF0B65F43CBF5407B84F32918ECBCB1A8">
+				<Item class="PointLight" referent="RBX95458A05AF7D48C290533E08FF26FA9E">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<float name="Brightness">4</float>
@@ -1187,7 +1191,7 @@
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX933AADA9768344B881643EA7AD710072">
+				<Item class="SurfaceGui" referent="RBXC8B0ABE0E7624D07B48014128EBBF6A1">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -1222,7 +1226,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBX1D46140EB5A44ED3BAA00E42F30F2D69">
+					<Item class="TextLabel" referent="RBX0F0731FED3CE4DC6AEBEC5A5C94C9CC4">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -1317,7 +1321,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX1C1EC463838E4121B7B2D3B1DA5B8ADF">
+				<Item class="SurfaceGui" referent="RBXE6F7BFFB2FDE4DDB8D2B893DA7450BE0">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -1352,7 +1356,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBX139679F35B6644788D111B4867C9AA19">
+					<Item class="TextLabel" referent="RBX3E65D62097F842E8A87DA693FE230F41">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -1447,7 +1451,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX858A96786D964F359BFF6F40B98399A2">
+				<Item class="SurfaceGui" referent="RBXEB9F48788D2F4E9DBF1558E0B6BA977C">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -1482,7 +1486,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBXDAFF3A8DD425428B9130A7C1E7F1DCF2">
+					<Item class="TextLabel" referent="RBXB388EFEFB78B415E9121AF959D958283">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -1577,7 +1581,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBX6983E6D5C7034DDBBA9DD8360919D6CC">
+				<Item class="SurfaceGui" referent="RBX91C46AFF5D79450198A9FFF09D328094">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -1612,7 +1616,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBXBEEF8E177B6C426A8D3E32A35196C19B">
+					<Item class="TextLabel" referent="RBX49555853E32E46BD96ADB18159E45902">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -1707,7 +1711,7 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="SurfaceGui" referent="RBXFC44061967A4414D84288614BB9C29F0">
+				<Item class="SurfaceGui" referent="RBX6CEA81BAE98545B9A3CDD62768112C92">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -1742,7 +1746,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBXC64BF34530024E439A7E8E0F915A7FBF">
+					<Item class="TextLabel" referent="RBX88D7DC3DE2454FD2B3D29C32408D5094">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -1839,7 +1843,7 @@
 				</Item>
 			</Item>
 		</Item>
-		<Item class="Model" referent="RBX356F9597C3E746DAB7345F069F631C9D">
+		<Item class="Model" referent="RBXE52B787698B844F4B129DAB39EFCB38A">
 			<Properties>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -1889,10 +1893,11 @@
 					</CFrame>
 				</OptionalCoordinateFrame>
 			</Properties>
-			<Item class="Part" referent="RBXE3ACE3B9B3B64DB2A47A2D8D5B5CB004">
+			<Item class="Part" referent="RBXDEB69886127E4E108E86EE375BFED4C4">
 				<Properties>
 					<bool name="Anchored">true</bool>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<bool name="AudioCanCollide">true</bool>
 					<float name="BackParamA">-0.5</float>
 					<float name="BackParamB">0.5</float>
 					<token name="BackSurface">0</token>
@@ -1986,7 +1991,7 @@
 						<Z>16</Z>
 					</Vector3>
 				</Properties>
-				<Item class="SurfaceGui" referent="RBX16D6EE907770488FB6543407196F3A45">
+				<Item class="SurfaceGui" referent="RBX7759998B37B34527A90C1B41B1D20E0B">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Ref name="Adornee">null</Ref>
@@ -2021,7 +2026,7 @@
 						<token name="ZIndexBehavior">1</token>
 						<float name="ZOffset">0</float>
 					</Properties>
-					<Item class="TextLabel" referent="RBX674DD95A58934DD5AB089E3865AB27BB">
+					<Item class="TextLabel" referent="RBX0638F763A4704A0A96C9DA859AFF5687">
 						<Properties>
 							<bool name="Active">false</bool>
 							<Vector2 name="AnchorPoint">
@@ -2117,7 +2122,7 @@
 					</Item>
 				</Item>
 			</Item>
-			<Item class="Model" referent="RBX902F0262D2C04E7FA1F8FF2755D23201">
+			<Item class="Model" referent="RBX6FEF14C4DC69402A99C68874868D6526">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
@@ -2167,10 +2172,11 @@
 						</CFrame>
 					</OptionalCoordinateFrame>
 				</Properties>
-				<Item class="Part" referent="RBXD5ACE0B90B0C435088ABD81DD7CFA860">
+				<Item class="Part" referent="RBX69DA03364FFE477C8D11DEC6D0D69602">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<BinaryString name="AttributesSerialize"></BinaryString>
+						<bool name="AudioCanCollide">true</bool>
 						<float name="BackParamA">-0.5</float>
 						<float name="BackParamB">0.5</float>
 						<token name="BackSurface">0</token>
@@ -2265,10 +2271,11 @@
 						</Vector3>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBXDE12237227404641AC4468310F8F1145">
+				<Item class="Part" referent="RBXB44B2371BACD49ECB89FCCF6C997A59C">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<BinaryString name="AttributesSerialize"></BinaryString>
+						<bool name="AudioCanCollide">true</bool>
 						<float name="BackParamA">-0.5</float>
 						<float name="BackParamB">0.5</float>
 						<token name="BackSurface">0</token>

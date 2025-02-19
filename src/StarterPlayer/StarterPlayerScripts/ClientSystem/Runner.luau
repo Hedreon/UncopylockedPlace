@@ -1,5 +1,5 @@
 --!strict
-local Run = {}
+local _Runner = {}
 
 local ContextActionService = game:GetService("ContextActionService")
 local GuiService = game:GetService("GuiService")
@@ -14,7 +14,7 @@ local LocalHumanoid = LocalCharacter:FindFirstChildOfClass("Humanoid")
 local Modules = ReplicatedStorage:FindFirstChild("Modules")
 local ActionTools = require(Modules:FindFirstChild("ActionTools"))
 
-local CrawlModule = script.Parent:FindFirstChild("Crawl")
+local Crawler = script.Parent:FindFirstChild("Crawler")
 
 local CurrentCamera = workspace.CurrentCamera
 local OriginalFieldOfView = CurrentCamera.FieldOfView
@@ -33,7 +33,7 @@ local function HandleAction(ActionName: string, InputState: Enum.UserInputState,
 
 				TweenService:Create(CurrentCamera, TweenData, {FieldOfView = 75}):Play()
 
-				LocalHumanoid.WalkSpeed = (CrawlModule:GetAttribute("Crawling") and 6) or 24
+				LocalHumanoid.WalkSpeed = (Crawler:GetAttribute("Crawling") and 6) or 24
 
 				ContextActionService:SetTitle(Action, "Walk")
 			elseif InputState == Enum.UserInputState.End then
@@ -41,7 +41,7 @@ local function HandleAction(ActionName: string, InputState: Enum.UserInputState,
 
 				TweenService:Create(CurrentCamera, TweenData, {FieldOfView = OriginalFieldOfView}):Play()
 
-				LocalHumanoid.WalkSpeed = (CrawlModule:GetAttribute("Crawling") and 4) or 16
+				LocalHumanoid.WalkSpeed = (Crawler:GetAttribute("Crawling") and 4) or 16
 
 				ContextActionService:SetTitle(Action, "Run")
 			end
@@ -53,7 +53,7 @@ local function HandleAction(ActionName: string, InputState: Enum.UserInputState,
 
 				TweenService:Create(CurrentCamera, TweenData, {FieldOfView = (Running and 75) or OriginalFieldOfView}):Play()
 
-				LocalHumanoid.WalkSpeed = (CrawlModule:GetAttribute("Crawling") and Running and 6) or (CrawlModule:GetAttribute("Crawling") and 4) or (Running and 24) or 16
+				LocalHumanoid.WalkSpeed = (Crawler:GetAttribute("Crawling") and Running and 6) or (Crawler:GetAttribute("Crawling") and 4) or (Running and 24) or 16
 
 				ContextActionService:SetTitle(Action, (Running and "Walk") or "Run")
 			end
@@ -73,7 +73,7 @@ local function ResetState()
 	script:SetAttribute("Running", Running)
 end
 
-function Run:Init()
+local function Runner()
 	LocalPlayer.CharacterAdded:Connect(function(Character)
 		LocalHumanoid = Character:FindFirstChildOfClass("Humanoid")
 		CurrentCamera = workspace.CurrentCamera
@@ -90,4 +90,4 @@ function Run:Init()
 	ActionTools:ModifyTouchButton(Action)
 end
 
-return Run
+return Runner

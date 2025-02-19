@@ -1,5 +1,5 @@
 --!strict
-local InputManager = {}
+local _InputManager = {}
 
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -9,7 +9,7 @@ local LayoutChanged = script:FindFirstChild("LayoutChanged")
 
 local CurrentInputLayout = "Unidentified"
 
-function InputManager:Init()
+local function InputManager()
 	if UserInputService.MouseEnabled then
 		CurrentInputLayout = "Desktop"
 	elseif #UserInputService:GetConnectedGamepads() > 0 then

@@ -1,5 +1,5 @@
 --!strict
-local GUI = {}
+local _GUIManager = {}
 
 local CollectionService = game:GetService("CollectionService")
 local Players = game:GetService("Players")
@@ -44,7 +44,7 @@ local function FormatKeyCode(KeyCode: Enum.KeyCode)
 	return string.sub(UserInputService:GetStringForKeyCode(KeyCode), 7)
 end
 
-function GUI:Init()
+local function GUIManager()
 	ControlsGui = New("ScreenGui") {
 		Name = "ControlsGui",
 		Parent = PlayerGui,
@@ -135,4 +135,4 @@ function GUI:Init()
 	end)
 end
 
-return GUI
+return GUIManager
